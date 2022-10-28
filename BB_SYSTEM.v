@@ -33,7 +33,9 @@ module BB_SYSTEM (
 	BB_SYSTEM_RESET_InHigh,
 	BB_SYSTEM_startButton_InLow, 
 	BB_SYSTEM_leftButton_InLow,
-	BB_SYSTEM_rightButton_InLow
+	BB_SYSTEM_rightButton_InLow,
+	BB_SYSTEM_upButton_InLow,
+	BB_SYSTEM_downButton_InLow
 );
 //=======================================================
 //  PARAMETER declarations
@@ -67,6 +69,8 @@ input		BB_SYSTEM_RESET_InHigh;
 input		BB_SYSTEM_startButton_InLow;
 input		BB_SYSTEM_leftButton_InLow;
 input		BB_SYSTEM_rightButton_InLow;
+input		BB_SYSTEM_upButton_InLow;
+input		BB_SYSTEM_downButton_InLow;
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
@@ -74,6 +78,8 @@ input		BB_SYSTEM_rightButton_InLow;
 wire 	BB_SYSTEM_startButton_InLow_cwire;
 wire 	BB_SYSTEM_leftButton_InLow_cwire;
 wire 	BB_SYSTEM_rightButton_InLow_cwire;
+wire 	BB_SYSTEM_upButton_InLow_cwire;
+wire 	BB_SYSTEM_downButton_InLow_cwire;
 
 // GAME
 wire [DATAWIDTH_BUS-1:0] regGAME_data7_wire;
@@ -116,7 +122,20 @@ SC_DEBOUNCE1 SC_DEBOUNCE1_u2 (
 	.SC_DEBOUNCE1_RESET_InHigh(BB_SYSTEM_RESET_InHigh),
 	.SC_DEBOUNCE1_button_In(~BB_SYSTEM_rightButton_InLow)
 );
-
+SC_DEBOUNCE1 SC_DEBOUNCE1_u3 (
+// port map - connection between master ports and signals/registers   
+	.SC_DEBOUNCE1_button_Out(BB_SYSTEM_upButton_InLow_cwire),
+	.SC_DEBOUNCE1_CLOCK_50(BB_SYSTEM_CLOCK_50),
+	.SC_DEBOUNCE1_RESET_InHigh(BB_SYSTEM_RESET_InHigh),
+	.SC_DEBOUNCE1_button_In(~BB_SYSTEM_upButton_InLow)
+);
+SC_DEBOUNCE1 SC_DEBOUNCE1_u4 (
+// port map - connection between master ports and signals/registers   
+	.SC_DEBOUNCE1_button_Out(BB_SYSTEM_downButton_InLow_cwire),
+	.SC_DEBOUNCE1_CLOCK_50(BB_SYSTEM_CLOCK_50),
+	.SC_DEBOUNCE1_RESET_InHigh(BB_SYSTEM_RESET_InHigh),
+	.SC_DEBOUNCE1_button_In(~BB_SYSTEM_downButton_InLow)
+);
 //######################################################################
 //#	!!! ACA VAN TUS COMPONENTES
 //######################################################################
