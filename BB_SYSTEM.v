@@ -168,7 +168,7 @@ matrix_ctrl matrix_ctrl_unit_0(
 .max7219_din(BB_SYSTEM_max7219DIN_Out),//max7219_din 
 .max7219_ncs(BB_SYSTEM_max7219NCS_Out),//max7219_ncs 
 .max7219_clk(BB_SYSTEM_max7219CLK_Out),//max7219_clk
-.disp_data(data_max), 
+.disp_data(data_max),
 .disp_addr(add),
 .intensity(4'hA),
 .clk(BB_SYSTEM_CLOCK_50),
