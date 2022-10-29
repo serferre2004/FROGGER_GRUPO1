@@ -19,13 +19,13 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module SC_upSPEEDCOUNTER #(parameter upSPEEDCOUNTER_DATAWIDTH=8)(
+module SC_upLEVELCOUNTER #(parameter upLEVELCOUNTER_DATAWIDTH=8)(
 	//////////// OUTPUTS //////////
-	SC_upSPEEDCOUNTER_data_OutBUS,
+	SC_upLEVELCOUNTER_data_OutBUS,
 	//////////// INPUTS //////////
-	SC_upSPEEDCOUNTER_CLOCK_50,
-	SC_upSPEEDCOUNTER_RESET_InHigh,
-	SC_upSPEEDCOUNTER_upcount_InLow
+	SC_upLEVELCOUNTER_CLOCK_50,
+	SC_upLEVELCOUNTER_RESET_InHigh,
+	SC_upLEVELCOUNTER_upcount_InLow
 );
 //=======================================================
 //  PARAMETER declarations
@@ -34,39 +34,39 @@ module SC_upSPEEDCOUNTER #(parameter upSPEEDCOUNTER_DATAWIDTH=8)(
 //=======================================================
 //  PORT declarations
 //=======================================================
-output		[upSPEEDCOUNTER_DATAWIDTH-1:0]	SC_upSPEEDCOUNTER_data_OutBUS;
-input		SC_upSPEEDCOUNTER_CLOCK_50;
-input		SC_upSPEEDCOUNTER_RESET_InHigh;
-input		SC_upSPEEDCOUNTER_upcount_InLow;
+output		[upLEVELCOUNTER_DATAWIDTH-1:0]	SC_upLEVELCOUNTER_data_OutBUS;
+input		SC_upLEVELCOUNTER_CLOCK_50;
+input		SC_upLEVELCOUNTER_RESET_InHigh;
+input		SC_upLEVELCOUNTER_upcount_InLow;
 
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
-reg [upSPEEDCOUNTER_DATAWIDTH-1:0] upSPEEDCOUNTER_Register;
-reg [upSPEEDCOUNTER_DATAWIDTH-1:0] upSPEEDCOUNTER_Signal;
+reg [upLEVELCOUNTER_DATAWIDTH-1:0] upLEVELCOUNTER_Register;
+reg [upLEVELCOUNTER_DATAWIDTH-1:0] upLEVELCOUNTER_Signal;
 //=======================================================
 //  Structural coding
 //=======================================================
 //INPUT LOGIC: COMBINATIONAL
 always @(*)
 begin
-	if (SC_upSPEEDCOUNTER_upcount_InLow == 1'b0)
-		upSPEEDCOUNTER_Signal = upSPEEDCOUNTER_Register + 1'b1;
+	if (SC_upLEVELCOUNTER_upcount_InLow == 1'b0)
+		upLEVELCOUNTER_Signal = upLEVELCOUNTER_Register + 1'b1;
 	else
-		upSPEEDCOUNTER_Signal = upSPEEDCOUNTER_Register;
+		upLEVELCOUNTER_Signal = upLEVELCOUNTER_Register;
 	end	
 //STATE REGISTER: SEQUENTIAL
-always @(posedge SC_upSPEEDCOUNTER_CLOCK_50, posedge SC_upSPEEDCOUNTER_RESET_InHigh)
+always @(posedge SC_upLEVELCOUNTER_CLOCK_50, posedge SC_upLEVELCOUNTER_RESET_InHigh)
 begin
-	if (SC_upSPEEDCOUNTER_RESET_InHigh  == 1'b1)
-		upSPEEDCOUNTER_Register <= 0;
+	if (SC_upLEVELCOUNTER_RESET_InHigh  == 1'b1)
+		upLEVELCOUNTER_Register <= 0;
 	else
-		upSPEEDCOUNTER_Register <= upSPEEDCOUNTER_Signal;
+		upLEVELCOUNTER_Register <= upLEVELCOUNTER_Signal;
 end
 //=======================================================
 //  Outputs
 //=======================================================
 //OUTPUT LOGIC: COMBINATIONAL
-assign SC_upSPEEDCOUNTER_data_OutBUS = upSPEEDCOUNTER_Register;
+assign SC_upLEVELCOUNTER_data_OutBUS = upLEVELCOUNTER_Register;
 
 endmodule
