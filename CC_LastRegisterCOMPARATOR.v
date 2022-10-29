@@ -23,7 +23,7 @@ module CC_LastRegisterCOMPARATOR #(parameter LastRegisterCOMPARATOR_DATAWIDTH=8)
 	CC_LastRegisterCOMPARATOR_win_OutBUS,
 //////////// INPUTS //////////
 	CC_LastRegisterCOMPARATOR_dataOR_InBUS,
-	CC_LastRegisterCOMPARATOR_dataFirstRegister_InBUS
+	CC_LastRegisterCOMPARATOR_dataLastRegister_InBUS
 );
 //=======================================================
 //  PARAMETER declarations
@@ -34,7 +34,7 @@ module CC_LastRegisterCOMPARATOR #(parameter LastRegisterCOMPARATOR_DATAWIDTH=8)
 //=======================================================
 output	[1:0] CC_LastRegisterCOMPARATOR_win_OutBUS;
 input 	[LastRegisterCOMPARATOR_DATAWIDTH-1:0] CC_LastRegisterCOMPARATOR_dataOR_InBUS;
-input 	[LastRegisterCOMPARATOR_DATAWIDTH-1:0] CC_LastRegisterCOMPARATOR_dataFirstRegister_InBUS;
+input 	[LastRegisterCOMPARATOR_DATAWIDTH-1:0] CC_LastRegisterCOMPARATOR_dataLastRegister_InBUS;
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
@@ -45,7 +45,7 @@ always @(CC_LastRegisterCOMPARATOR_dataOR_InBUS)
 begin
 	if( CC_LastRegisterCOMPARATOR_dataOR_InBUS == 8'b11111111)
 		CC_LastRegisterCOMPARATOR_win_OutBUS = 2'b11;
-	else if(CC_LastRegisterCOMPARATOR_dataOR_InBUS != CC_LastRegisterCOMPARATOR_dataFirstRegister_InBUS)
+	else if(CC_LastRegisterCOMPARATOR_dataOR_InBUS != CC_LastRegisterCOMPARATOR_dataLastRegister_InBUS)
 		CC_LastRegisterCOMPARATOR_win_OutLow = 2'b01;
 	else:
 		CC_LastRegisterCOMPARATOR_win_OutLow = 2'b00;
