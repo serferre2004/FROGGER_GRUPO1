@@ -1,4 +1,3 @@
-//#####################FALTA MODIFICAR##################################
 /*######################################################################
 //#	G0B1T: HDL EXAMPLES. 2018.
 //######################################################################
@@ -19,11 +18,12 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module CC_SPEEDCOMPARATOR #(parameter SPEEDCOMPARATOR_DATAWIDTH=23)(
+module CC_LastRegisterCOMPARATOR #(parameter LastRegisterCOMPARATOR_DATAWIDTH=8)(
 //////////// OUTPUTS //////////
-	CC_SPEEDCOMPARATOR_T0_OutLow,
+	CC_LastRegisterCOMPARATOR_win_OutBUS,
 //////////// INPUTS //////////
-	CC_SPEEDCOMPARATOR_data_InBUS
+	CC_LastRegisterCOMPARATOR_dataOR_InBUS,
+	CC_LastRegisterCOMPARATOR_dataFirstRegister_InBUS
 );
 //=======================================================
 //  PARAMETER declarations
@@ -32,20 +32,23 @@ module CC_SPEEDCOMPARATOR #(parameter SPEEDCOMPARATOR_DATAWIDTH=23)(
 //=======================================================
 //  PORT declarations
 //=======================================================
-output	reg CC_SPEEDCOMPARATOR_T0_OutLow;
-input 	[SPEEDCOMPARATOR_DATAWIDTH-1:0] CC_SPEEDCOMPARATOR_data_InBUS;
+output	[1:0] CC_LastRegisterCOMPARATOR_win_OutBUS;
+input 	[LastRegisterCOMPARATOR_DATAWIDTH-1:0] CC_LastRegisterCOMPARATOR_dataOR_InBUS;
+input 	[LastRegisterCOMPARATOR_DATAWIDTH-1:0] CC_LastRegisterCOMPARATOR_dataFirstRegister_InBUS;
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
 //=======================================================
 //  Structural coding
 //=======================================================
-always @(CC_SPEEDCOMPARATOR_data_InBUS)
+always @(CC_LastRegisterCOMPARATOR_dataOR_InBUS)
 begin
-	if( CC_SPEEDCOMPARATOR_data_InBUS == 23'b11111111111111111111111)
-		CC_SPEEDCOMPARATOR_T0_OutLow = 1'b0;
-	else 
-		CC_SPEEDCOMPARATOR_T0_OutLow = 1'b1;
+	if( CC_LastRegisterCOMPARATOR_dataOR_InBUS == 8'b11111111)
+		CC_LastRegisterCOMPARATOR_win_OutBUS = 2'b11;
+	else if(CC_LastRegisterCOMPARATOR_dataOR_InBUS != CC_LastRegisterCOMPARATOR_dataFirstRegister_InBUS)
+		CC_LastRegisterCOMPARATOR_win_OutLow = 2'b01;
+	else:
+		CC_LastRegisterCOMPARATOR_win_OutLow = 2'b00;
 end
 
 endmodule
