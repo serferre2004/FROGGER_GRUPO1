@@ -1,3 +1,4 @@
+//##################PARA PERDER##########################
 //####################################################################*/
 //=======================================================
 //  MODULE Definition
@@ -37,13 +38,12 @@ input 	[MATRIXCOMPARATOR_DATAWIDTH-1:0] CC_MATRIXCOMPARATOR_registro0_InBUS;
 //=======================================================
 //  Structural coding
 //=======================================================
-//#SE NECESITA CAMBIAR
 always @(CC_MATRIXCOMPARATOR_data_InBUS)
 begin
-	if( CC_MATRIXCOMPARATOR_data_InBUS == 8'b00000000)
-		CC_MATRIXCOMPARATOR_MATRIX_OutLow = 1'b1;
+	if((CC_MATRIXCOMPARATOR_registro7_InBUS == 8'b00000000)&(CC_MATRIXCOMPARATOR_registro6_InBUS == 8'b00000000)&(CC_MATRIXCOMPARATOR_registro5_InBUS == 8'b00000000)&(CC_MATRIXCOMPARATOR_registro4_InBUS == 8'b00000000)&(CC_MATRIXCOMPARATOR_registro3_InBUS == 8'b00000000)&(CC_MATRIXCOMPARATOR_registro2_InBUS == 8'b00000000)&(CC_MATRIXCOMPARATOR_registro1_InBUS == 8'b00000000)&(CC_MATRIXCOMPARATOR_registro0_InBUS == 8'b00000000))
+		CC_MATRIXCOMPARATOR_crash_OutLow = 1'b1;
 	else 
-		CC_MATRIXCOMPARATOR_MATRIX_OutLow = 1'b0;
+		CC_MATRIXCOMPARATOR_crash_OutLow = 1'b0;
 end
 
 endmodule
