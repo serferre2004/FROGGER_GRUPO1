@@ -61,7 +61,7 @@ input			SC_STATEMACHINEPOINT_upButton_InLow;
 input			SC_STATEMACHINEPOINT_downButton_InLow;
 input			SC_STATEMACHINEPOINT_leftButton_InLow;
 input			SC_STATEMACHINEPOINT_rightButton_InLow;
-input			SC_STATEMACHINEPOINT_bottomsidecomparator_InLow;
+input			SC_STATEMACHINEPOINT_FirstRegister_InLow;
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
@@ -79,7 +79,7 @@ begin
 		STATE_START_0: STATE_Signal = STATE_CHECK_0;
 		STATE_CHECK_0: if (SC_STATEMACHINEPOINT_startButton_InLow == 1'b0) STATE_Signal = STATE_INIT_0;
 						else if (SC_STATEMACHINEPOINT_upButton_InLow == 1'b0) STATE_Signal = STATE_UP_0;
-						else if (SC_STATEMACHINEPOINT_downButton_InLow == 1'b0 & (SC_STATEMACHINEPOINT_bottomsidecomparator_InLow == 1'b1)) STATE_Signal = STATE_DOWN_0;
+						else if (SC_STATEMACHINEPOINT_downButton_InLow == 1'b0 & (SC_STATEMACHINEPOINT_FirstRegister_InLow == 1'b1)) STATE_Signal = STATE_DOWN_0;
 						else if (SC_STATEMACHINEPOINT_leftButton_InLow == 1'b0) STATE_Signal = STATE_LEFT_0;
 						else if (SC_STATEMACHINEPOINT_rightButton_InLow == 1'b0) STATE_Signal = STATE_RIGHT_0;
 						else STATE_Signal = STATE_CHECK_0;
