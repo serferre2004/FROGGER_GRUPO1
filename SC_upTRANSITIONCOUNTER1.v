@@ -50,23 +50,23 @@ reg [upTRANSITION1_DATAWIDTH-1:0] upTRANSITION1_Signal;
 //INPUT LOGIC: COMBINATIONAL
 always @(*)
 begin
-	if (SC_upTRANSITION0COUNTER1_upcount_InLow == 1'b0)
-		upTRANSITION0COUNTER1_Signal = upTRANSITION0COUNTER1_Register + 1'b1;
+	if (SC_upTRANSITIONCOUNTER1_upcount_InLow == 1'b0)
+		upTRANSITIONCOUNTER1_Signal = upTRANSITIONCOUNTER1_Register + 1'b1;
 	else
-		upTRANSITION0COUNTER1_Signal = upTRANSITION0COUNTER1_Register;
+		upTRANSITIONCOUNTER1_Signal = upTRANSITIONCOUNTER1_Register;
 	end	
 //STATE REGISTER: SEQUENTIAL
-always @(posedge SC_upTRANSITION0COUNTER1_CLOCK_50, posedge SC_upTRANSITION0COUNTERR1_RESET_InHigh)
+always @(posedge SC_upTRANSITIONCOUNTER1_CLOCK_50, posedge SC_upTRANSITIONCOUNTERR1_RESET_InHigh)
 begin
-	if (SC_upTRANSITION0COUNTER1_RESET_InHigh  == 1'b1)
-		upTRANSITION0COUNTER1_Register <= 0;
+	if (SC_upTRANSITIONCOUNTER1_RESET_InHigh  == 1'b1)
+		upTRANSITIONCOUNTER1_Register <= 0;
 	else
-		upTRANSITION0COUNTER1_Register <= upTRANSITION0COUNTER1_Signal;
+		upTRANSITIONCOUNTER1_Register <= upTRANSITION0COUNTER1_Signal;
 end
 //=======================================================
 //  Outputs
 //=======================================================
 //OUTPUT LOGIC: COMBINATIONAL
-assign SC_upTRANSITION0COUNTER1_data_OutBUS = upTRANSITION0COUNTER1_Register;
+assign SC_upTRANSITIONCOUNTER1_data_OutBUS = upTRANSITION0COUNTER1_Register;
 
 endmodule
