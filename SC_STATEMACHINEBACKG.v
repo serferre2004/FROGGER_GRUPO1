@@ -20,8 +20,6 @@
 //=======================================================
 module SC_STATEMACHINEBACKG (
 	//////////// OUTPUTS //////////
-	SC_STATEMACHINEBACKG_clear_OutLow,
-	SC_STATEMACHINEBACKG_load_OutLow,
 	SC_STATEMACHINEBACKG_shiftselection_OutBus,
 	SC_STATEMACHINEBACKG_upcount_out,
 	//////////// INPUTS //////////
@@ -44,8 +42,6 @@ localparam STATE_CHECK_1									= 6;
 //=======================================================
 //  PORT declarations
 //=======================================================
-output reg		SC_STATEMACHINEBACKG_clear_OutLow;
-output reg		SC_STATEMACHINEBACKG_load_OutLow;
 output reg		[1:0] SC_STATEMACHINEBACKG_shiftselection_OutBus;
 output reg 		SC_STATEMACHINEBACKG_upcount_out;
 input			SC_STATEMACHINEBACKG_CLOCK_50;
@@ -100,8 +96,6 @@ begin
 //=========================================================
 	STATE_RESET_0 :	
 		begin
-			SC_STATEMACHINEBACKG_clear_OutLow = 1'b1;
-			SC_STATEMACHINEBACKG_load_OutLow = 1'b1;
 			SC_STATEMACHINEBACKG_shiftselection_OutBus  = 2'b11; 
 			SC_STATEMACHINEBACKG_upcount_out = 1'b1;
 		end
@@ -110,8 +104,6 @@ begin
 //=========================================================
 	STATE_START_0 :	
 		begin
-			SC_STATEMACHINEBACKG_clear_OutLow = 1'b1;
-			SC_STATEMACHINEBACKG_load_OutLow = 1'b1;
 			SC_STATEMACHINEBACKG_shiftselection_OutBus  = 2'b11; 
 			SC_STATEMACHINEBACKG_upcount_out = 1'b1;
 		end
@@ -120,8 +112,6 @@ begin
 //=========================================================
 	STATE_CHECK_0 :
 		begin
-			SC_STATEMACHINEBACKG_clear_OutLow = 1'b1;
-			SC_STATEMACHINEBACKG_load_OutLow = 1'b1;
 			SC_STATEMACHINEBACKG_shiftselection_OutBus  = 2'b11; 
 			SC_STATEMACHINEBACKG_upcount_out = 1'b1;
 		end
@@ -130,8 +120,6 @@ begin
 //=========================================================
 	STATE_CHECK_1 :
 		begin
-			SC_STATEMACHINEBACKG_clear_OutLow = 1'b1;
-			SC_STATEMACHINEBACKG_load_OutLow = 1'b1;
 			SC_STATEMACHINEBACKG_shiftselection_OutBus  = 2'b11; 
 			SC_STATEMACHINEBACKG_upcount_out = 1'b1;
 		end
@@ -140,8 +128,6 @@ begin
 //=========================================================
 	STATE_INIT_0 :	
 		begin
-			SC_STATEMACHINEBACKG_clear_OutLow = 1'b0;
-			SC_STATEMACHINEBACKG_load_OutLow = 1'b1;
 			SC_STATEMACHINEBACKG_shiftselection_OutBus  = 2'b11; 
 			SC_STATEMACHINEBACKG_upcount_out = 1'b1;
 		end
@@ -150,8 +136,6 @@ begin
 //=========================================================
 	STATE_SHIFT_0 :
 		begin
-			SC_STATEMACHINEBACKG_clear_OutLow = 1'b1;
-			SC_STATEMACHINEBACKG_load_OutLow = 1'b1;
 			SC_STATEMACHINEBACKG_shiftselection_OutBus  = 2'b10; 
 			SC_STATEMACHINEBACKG_upcount_out = 1'b1;
 		end
@@ -160,8 +144,6 @@ begin
 //=========================================================
 	STATE_COUNT_0 :	
 		begin
-			SC_STATEMACHINEBACKG_clear_OutLow = 1'b1;
-			SC_STATEMACHINEBACKG_load_OutLow = 1'b1;
 			SC_STATEMACHINEBACKG_shiftselection_OutBus  = 2'b11;  
 			SC_STATEMACHINEBACKG_upcount_out = 1'b0;
 		end
@@ -170,8 +152,6 @@ begin
 //=========================================================
 	default :
 		begin
-			SC_STATEMACHINEBACKG_clear_OutLow = 1'b1;
-			SC_STATEMACHINEBACKG_load_OutLow = 1'b1;
 			SC_STATEMACHINEBACKG_shiftselection_Out  = 2'b11;  
 			SC_STATEMACHINEBACKG_upcount_out = 1'b1;
 		end
