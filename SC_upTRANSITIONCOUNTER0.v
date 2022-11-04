@@ -21,7 +21,7 @@
 //=======================================================
 module SC_upTRANSITION0 #(parameter upTRANSITIONCOUNTER0_DATAWIDTH=8)(
 	//////////// OUTPUTS //////////
-	SC_upTRANSITION0COUNTER_data_OutBUS,
+	SC_upTRANSITIONCOUNTER0_data_OutBUS,
 	//////////// INPUTS //////////
 	SC_upTRANSITIONCOUNTER0_CLOCK_50,
 	SC_upTRANSITIONCOUNTER0_RESET_InHigh,
@@ -34,7 +34,7 @@ module SC_upTRANSITION0 #(parameter upTRANSITIONCOUNTER0_DATAWIDTH=8)(
 //=======================================================
 //  PORT declarations
 //=======================================================
-output		[upTRANSITIONCOUNTER_DATAWIDTH-1:0]	SC_upTRANSITIONCOUNTER0_data_OutBUS;
+output		[upTRANSITIONCOUNTER0_DATAWIDTH-1:0]	SC_upTRANSITIONCOUNTER0_data_OutBUS;
 input		SC_upTRANSITIONCOUNTER0_CLOCK_50;
 input		SC_upTRANSITIONCOUNTER0_RESET_InHigh;
 input		SC_upTRANSITIONCOUNTER0_upcount_InLow;
