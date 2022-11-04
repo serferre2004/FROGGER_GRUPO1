@@ -56,7 +56,7 @@ output reg		SC_STATEMACHINEPOINT_load1_OutLow;
 output reg		[1:0] SC_STATEMACHINEPOINT_shiftselection_Out;
 input			SC_STATEMACHINEPOINT_CLOCK_50;
 input 			SC_STATEMACHINEPOINT_RESET_InHigh;
-input			SC_STATEMACHINEPOINT_Start_Game;
+input			SC_STATEMACHINEPOINT_startGame_InLow;
 input			SC_STATEMACHINEPOINT_upButton_InLow;
 input			SC_STATEMACHINEPOINT_downButton_InLow;
 input			SC_STATEMACHINEPOINT_leftButton_InLow;
@@ -77,7 +77,7 @@ begin
 	case (STATE_Register)
 		STATE_RESET_0: STATE_Signal = STATE_START_0;
 		STATE_START_0: STATE_Signal = STATE_CHECK_0;
-		STATE_CHECK_0: if (SC_STATEMACHINEPOINT_Start_Game == 1'b0) STATE_Signal = STATE_INIT_0;
+		STATE_CHECK_0: if (SC_STATEMACHINEPOINT_startGame_InLow == 1'b0) STATE_Signal = STATE_INIT_0;
 						else if (SC_STATEMACHINEPOINT_upButton_InLow == 1'b0) STATE_Signal = STATE_UP_0;
 						else if (SC_STATEMACHINEPOINT_downButton_InLow == 1'b0 & (SC_STATEMACHINEPOINT_FirstRegister_InLow == 1'b1)) STATE_Signal = STATE_DOWN_0;
 						else if (SC_STATEMACHINEPOINT_leftButton_InLow == 1'b0) STATE_Signal = STATE_LEFT_0;
@@ -89,7 +89,7 @@ begin
 		STATE_LEFT_0:  	STATE_Signal = STATE_CHECK_1;
 		STATE_RIGHT_0:  STATE_Signal = STATE_CHECK_1;
 
-		STATE_CHECK_1: if (SC_STATEMACHINEPOINT_Start_Game == 1'b0) STATE_Signal = STATE_CHECK_1;
+		STATE_CHECK_1: if (SC_STATEMACHINEPOINT_startGame_InLow == 1'b0) STATE_Signal = STATE_CHECK_1;
 						else if (SC_STATEMACHINEPOINT_upButton_InLow == 1'b0) STATE_Signal = STATE_CHECK_1;
 						else if (SC_STATEMACHINEPOINT_downButton_InLow == 1'b0) STATE_Signal = STATE_CHECK_1;
 						else if (SC_STATEMACHINEPOINT_leftButton_InLow == 1'b0) STATE_Signal = STATE_CHECK_1;
