@@ -21,19 +21,22 @@
 //=======================================================
 module SC_STATEMACHINEGAME (
 	//////////// OUTPUTS //////////
-	SC_STATEMACHINEGAME_LevelCounterSignal_OutLow,
-	SC_STATEMACHINEGAME_RESET_OutHigh,
 	SC_STATEMACHINEGAME_LifesSignal_OutLow,
-	SC_STATEMACHINEGAME_Multiplexers_OutLow,
 	SC_STATEMACHINEGAME_StartGame_OutLow,
 	SC_STATEMACHINEGAME_LoadGame_OutLow,
+	SC_STATEMACHINEGAME_CLEAR_LOST,
+	SC_STATEMACHINE_GAME_TRANSITIONTIMECOUNTER,,
+	SC_STATEMACHINE_GAME_TRANSITIONCOUNTER,
+	SC_STATEMCHINE_GAME_LoadLastRegister_OutLow,
 	//////////// INPUTS //////////
 	SC_STATEMACHINEGAME_CLOCK_50,
 	SC_STATEMACHINEGAME_RESET_InHigh,
 	SC_STATEMACHINEGAME_LastRegister_InLow,
 	SC_STATEMACHINEGAME_MatrixComparator_InLow,
-	SC_STATEMACHINEGAME_LifesCounter_InLow,
-	SC_STATEMACHINEGAME_startButton_InLow
+	SC_STATEMACHINE_GAME_LifesCounterCOMPARATOR_InLow,
+	SC_STATEMACHINEGAME_startButton_InLow,
+	SC_STATEMACHINEGAME_RESET_InHigh,
+	SC_STATEMACHINE_GAMETYPE_TRANSITIONTIME_COMPARATOR
 );	
 //=======================================================
 //  PARAMETER declarations
@@ -51,18 +54,21 @@ localparam STATE_CHECK_1									= 8;
 //=======================================================
 //  PORT declarations
 //=======================================================
-output reg		SC_STATEMACHINEGAME_LevelCounterSignal_OutLow;
-output reg		SC_STATEMACHINEGAME_RESET_OutHigh;
 output reg		SC_STATEMACHINEGAME_LifesSignal_OutLow;
-output reg		SC_STATEMACHINEGAME_Multiplexers_OutLow;
-output reg		SC_STATEMACHINEGAME_startGame_OutLow;
+output reg		SC_STATEMACHINEGAME_StartGame_OutLow;
 output reg		SC_STATEMACHINEGAME_LoadGame_OutLow;
-input			SC_STATEMACHINEGAME_CLOCK_50;
-input 			SC_STATEMACHINEGAME_RESET_InHigh;
-input			SC_STATEMACHINEGAME_LastRegister_InLow;
-input			SC_STATEMACHINEGAME_MatrixComparator_InLow;
-input			SC_STATEMACHINEGAME_LifesCounter_InLow;
-input			SC_STATEMACHINEGAME_startButton_InLow;
+output reg		SC_STATEMACHINEGAME_CLEAR_LOST;
+output reg		SC_STATEMACHINE_GAME_TRANSITIONTIMECOUNTER;
+output reg		SC_STATEMACHINE_GAME_TRANSITIONCOUNTER;
+output reg		SC_STATEMCHINE_GAME_LoadLastRegister_OutLow;
+input			SC_STATEMACHINEGAME_CLOCK_50,
+input			SC_STATEMACHINEGAME_RESET_InHigh,
+input			SC_STATEMACHINEGAME_LastRegister_InLow,
+input			SC_STATEMACHINEGAME_MatrixComparator_InLow,
+input			SC_STATEMACHINE_GAME_LifesCounterCOMPARATOR_InLow,
+input			SC_STATEMACHINEGAME_startButton_InLow,
+input			SC_STATEMACHINEGAME_RESET_InHigh,
+input			SC_STATEMACHINE_GAMETYPE_TRANSITIONTIME_COMPARATOR
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
