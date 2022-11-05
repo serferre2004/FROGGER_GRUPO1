@@ -148,10 +148,12 @@ begin
 //=========================================================
 	STATE_RESET_0 :	
 		begin
-			SC_STATEMACHINEGAME_clear_OutLow = 1'b1;
-			SC_STATEMACHINEGAME_load0_OutLow = 1'b1;
-			SC_STATEMACHINEGAME_load1_OutLow = 1'b1;
-			SC_STATEMACHINEGAME_shiftselection_Out  = 2'b11; 
+			SC_STATEMACHINEGAME_ClearLost_OutLow = 1'b1;
+			SC_STATEMACHINEGAME_LifesSignal_OutLow = 1'b1;
+			SC_STATEMACHINEGAME_LoadLastRegister_OutLow = 1'b1;
+			SC_STATEMACHINEGAME_StartGame_OutLow  = 1'b1;
+			SC_STATEMACHINEGAME_StartGame_OutLow  = 1'b1;
+
 		end
 //=========================================================
 // STATE_START
