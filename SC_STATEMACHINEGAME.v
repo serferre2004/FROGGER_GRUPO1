@@ -21,7 +21,13 @@
 //=======================================================
 module SC_STATEMACHINEGAME (
 	//////////// OUTPUTS //////////
+<<<<<<< Updated upstream
 	SC_STATEMACHINEGAME_LifesSignal_OutLow,
+=======
+	SC_STATEMACHINEGAME_ClearLost_OutLow,
+	SC_STATEMACHINEGAME_LifesSignal_OutLow,
+	SC_STATEMACHINEGAME_LoadLastRegister_OutLow,
+>>>>>>> Stashed changes
 	SC_STATEMACHINEGAME_StartGame_OutLow,
 	SC_STATEMACHINEGAME_LoadGame_OutLow,
 	SC_STATEMACHINEGAME_CLEAR_LOST,
@@ -31,12 +37,18 @@ module SC_STATEMACHINEGAME (
 	//////////// INPUTS //////////
 	SC_STATEMACHINEGAME_CLOCK_50,
 	SC_STATEMACHINEGAME_RESET_InHigh,
-	SC_STATEMACHINEGAME_LastRegister_InLow,
+	SC_STATEMACHINEGAME_LastRegister_InBUS,
 	SC_STATEMACHINEGAME_MatrixComparator_InLow,
+<<<<<<< Updated upstream
 	SC_STATEMACHINE_GAME_LifesCounterCOMPARATOR_InLow,
 	SC_STATEMACHINEGAME_startButton_InLow,
 	SC_STATEMACHINEGAME_RESET_InHigh,
 	SC_STATEMACHINE_GAMETYPE_TRANSITIONTIME_COMPARATOR
+=======
+	SC_STATEMACHINEGAME_LifesCounterComparator_InLow,
+	SC_STATEMACHINEGAME_LevelCounterComparator_InLow,
+	SC_STATEMACHINEGAME_startButton_InLow
+>>>>>>> Stashed changes
 );	
 //=======================================================
 //  PARAMETER declarations
@@ -45,18 +57,22 @@ module SC_STATEMACHINEGAME (
 localparam STATE_RESET_0									= 0;
 localparam STATE_START_0									= 1;
 localparam STATE_CHECK_0									= 2;
-localparam STATE_INIT_0										= 3;
-localparam STATE_UP_0										= 4;
-localparam STATE_DOWN_0										= 5; 
-localparam STATE_LEFT_0										= 6; 
-localparam STATE_RIGHT_0									= 7;
-localparam STATE_CHECK_1									= 8;
+localparam STATE_LOSEGAME_0									= 3;
+localparam STATE_LOSEGAME_1									= 4;
+localparam STATE_WINGAME_0									= 5;
+localparam STATE_WINGAME_1									= 6;
+localparam STATE_LOSELIFE_0									= 7; 
+localparam STATE_NEXTLEVEL_0								= 8; 
+localparam STATE_NEXTLEVEL_1								= 9; 
+localparam STATE_HOUSE_0									= 10;
+
 //=======================================================
 //  PORT declarations
 //=======================================================
 output reg		SC_STATEMACHINEGAME_LifesSignal_OutLow;
 output reg		SC_STATEMACHINEGAME_StartGame_OutLow;
 output reg		SC_STATEMACHINEGAME_LoadGame_OutLow;
+<<<<<<< Updated upstream
 output reg		SC_STATEMACHINEGAME_CLEAR_LOST;
 output reg		SC_STATEMACHINE_GAME_TRANSITIONTIMECOUNTER;
 output reg		SC_STATEMACHINE_GAME_TRANSITIONCOUNTER;
@@ -69,6 +85,15 @@ input			SC_STATEMACHINE_GAME_LifesCounterCOMPARATOR_InLow,
 input			SC_STATEMACHINEGAME_startButton_InLow,
 input			SC_STATEMACHINEGAME_RESET_InHigh,
 input			SC_STATEMACHINE_GAMETYPE_TRANSITIONTIME_COMPARATOR
+=======
+input			SC_STATEMACHINEGAME_CLOCK_50;
+input 			SC_STATEMACHINEGAME_RESET_InHigh;
+input			[1:0] SC_STATEMACHINEGAME_LastRegister_InBUS;
+input			SC_STATEMACHINEGAME_MatrixComparator_InLow;
+input			SC_STATEMACHINEGAME_LifesCounterComparator_InLow;
+input			SC_STATEMACHINEGAME_LevelCounterComparator_InLow;
+input			SC_STATEMACHINEGAME_startButton_InLow;
+>>>>>>> Stashed changes
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
@@ -82,27 +107,24 @@ reg [3:0] STATE_Signal;
 always @(*)
 begin
 	case (STATE_Register)
-		STATE_RESET_0: STATE_Signal = STATE_START_0;
+		STATE_RESET_0: if (SC_STATEMACHINEGAME_startButton_InLow == 1'b0) STATE_Signal = STATE_START_0;
+						else STATE_Signal = STATE_RESET_0;
 		STATE_START_0: STATE_Signal = STATE_CHECK_0;
-		STATE_CHECK_0: if (SC_STATEMACHINEGAME_startButton_InLow == 1'b0) STATE_Signal = STATE_INIT_0;
-						else if (SC_STATEMACHINEGAME_upButton_InLow == 1'b0) STATE_Signal = STATE_UP_0;
-						else if (SC_STATEMACHINEGAME_downButton_InLow == 1'b0 & (SC_STATEMACHINEGAME_bottomsidecomparator_InLow == 1'b1)) STATE_Signal = STATE_DOWN_0;
-						else if (SC_STATEMACHINEGAME_leftButton_InLow == 1'b0) STATE_Signal = STATE_LEFT_0;
-						else if (SC_STATEMACHINEGAME_rightButton_InLow == 1'b0) STATE_Signal = STATE_RIGHT_0;
+		STATE_CHECK_0: if (SC_STATEMACHINEGAME_LifesCounterComparator_InLow == 1'b0) STATE_Signal = STATE_LOSEGAME_0;
+						else if (SC_STATEMACHINEGAME_LevelCounterComparator_InLow == 1'b0) STATE_Signal = STATE_WINGAME_0;
+						else if (SC_STATEMACHINEGAME_MatrixComparator_InLow== 1'b0) STATE_Signal = STATE_LOSELIFE_0;
+						else if (SC_STATEMACHINEGAME_LastRegister_InBUS == 2'b00) STATE_Signal = STATE_NEXTLEVEL_0;
+						else if (SC_STATEMACHINEGAME_LastRegister_InBUS == 2'b10) STATE_Signal = STATE_HOUSE_0;
 						else STATE_Signal = STATE_CHECK_0;
-		STATE_INIT_0: 	STATE_Signal = STATE_CHECK_1;
-		STATE_UP_0: 	STATE_Signal = STATE_CHECK_1;
-		STATE_DOWN_0: 	STATE_Signal = STATE_CHECK_1;
-		STATE_LEFT_0:  	STATE_Signal = STATE_CHECK_1;
-		STATE_RIGHT_0:  STATE_Signal = STATE_CHECK_1;
+		STATE_LOSEGAME_0: 	STATE_Signal = STATE_LOSEGAME_1;
+		STATE_LOSEGAME_1: 	STATE_Signal = STATE_LOSEGAME_1;
+		STATE_LOSELIFE_0: 	STATE_Signal = STATE_CHECK_0;
+		STATE_WINGAME_0:  	STATE_Signal = STATE_WINGAME_1;
+		STATE_WINGAME_1: 	STATE_Signal = STATE_WINGAME_1;
+		STATE_NEXTLEVEL_0:  STATE_Signal = STATE_NEXTLEVEL_1;
 
-		STATE_CHECK_1: if (SC_STATEMACHINEGAME_startButton_InLow == 1'b0) STATE_Signal = STATE_CHECK_1;
-						else if (SC_STATEMACHINEGAME_upButton_InLow == 1'b0) STATE_Signal = STATE_CHECK_1;
-						else if (SC_STATEMACHINEGAME_downButton_InLow == 1'b0) STATE_Signal = STATE_CHECK_1;
-						else if (SC_STATEMACHINEGAME_leftButton_InLow == 1'b0) STATE_Signal = STATE_CHECK_1;
-						else if (SC_STATEMACHINEGAME_rightButton_InLow == 1'b0) STATE_Signal = STATE_CHECK_1;
-						else STATE_Signal = STATE_CHECK_0;
-
+		STATE_NEXTLEVEL_1: STATE_Signal = STATE_CHECK_0;
+		STATE_HOUSE_0: STATE_Signal = STATE_CHECK_0;
 		default : 		STATE_Signal = STATE_CHECK_0;
 	endcase
 end

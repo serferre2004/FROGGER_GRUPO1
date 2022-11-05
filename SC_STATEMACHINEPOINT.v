@@ -32,7 +32,7 @@ module SC_STATEMACHINEPOINT (
 	SC_STATEMACHINEPOINT_downButton_InLow,
 	SC_STATEMACHINEPOINT_leftButton_InLow,
 	SC_STATEMACHINEPOINT_rightButton_InLow,
-	SC_STATEMACHINEPOINT_FirstRegister_InLow
+	SC_STATEMACHINEPOINT_FirstRegisterCOMPARATOR_firstreg_InLow
 );	
 //=======================================================
 //  PARAMETER declarations
