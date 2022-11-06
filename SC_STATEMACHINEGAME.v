@@ -227,7 +227,7 @@ begin
 			SC_STATEMACHINEGAME_ClearLost_OutLow = 1'b1;
 			SC_STATEMACHINEGAME_LifesSignal_OutLow = 1'b1;
 			SC_STATEMACHINEGAME_LoadLastRegister_OutLow = 1'b1;
-			SC_STATEMACHINEGAME_StartGame_OutLow  = 1'b1;
+			SC_STATEMACHINEGAME_StartGame_OutLow  = 1'b0;
 			SC_STATEMACHINEGAME_LoadGame_OutLow  = 1'b1;
 			SC_STATEMACHINEGAME_TransitionCounter1_OutLow = 1'b0;
 			SC_STATEMACHINEGAME_clearPoint_OutLow = 1'b1;

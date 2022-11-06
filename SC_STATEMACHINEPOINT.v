@@ -20,7 +20,6 @@
 //=======================================================
 module SC_STATEMACHINEPOINT (
 	//////////// OUTPUTS //////////
-	SC_STATEMACHINEPOINT_clear_OutLow,
 	SC_STATEMACHINEPOINT_load0_OutLow,
 	SC_STATEMACHINEPOINT_load1_OutLow,
 	SC_STATEMACHINEPOINT_shiftselection_Out,
@@ -50,7 +49,6 @@ localparam STATE_CHECK_1									= 8;
 //=======================================================
 //  PORT declarations
 //=======================================================
-output reg		SC_STATEMACHINEPOINT_clear_OutLow;
 output reg		SC_STATEMACHINEPOINT_load0_OutLow;
 output reg		SC_STATEMACHINEPOINT_load1_OutLow;
 output reg		[1:0] SC_STATEMACHINEPOINT_shiftselection_Out;
@@ -77,13 +75,12 @@ begin
 	case (STATE_Register)
 		STATE_RESET_0: STATE_Signal = STATE_START_0;
 		STATE_START_0: STATE_Signal = STATE_CHECK_0;
-		STATE_CHECK_0: if (SC_STATEMACHINEPOINT_startGame_InLow == 1'b0) STATE_Signal = STATE_INIT_0;
+		STATE_CHECK_0: if (SC_STATEMACHINEPOINT_startGame_InLow == 1'b0) STATE_Signal = STATE_CHECK_1;
 						else if (SC_STATEMACHINEPOINT_upButton_InLow == 1'b0) STATE_Signal = STATE_UP_0;
 						else if (SC_STATEMACHINEPOINT_downButton_InLow == 1'b0 & (SC_STATEMACHINEPOINT_FirstRegisterCOMPARATOR_firstreg_InLow == 1'b1)) STATE_Signal = STATE_DOWN_0;
 						else if (SC_STATEMACHINEPOINT_leftButton_InLow == 1'b0) STATE_Signal = STATE_LEFT_0;
 						else if (SC_STATEMACHINEPOINT_rightButton_InLow == 1'b0) STATE_Signal = STATE_RIGHT_0;
 						else STATE_Signal = STATE_CHECK_0;
-		STATE_INIT_0: 	STATE_Signal = STATE_CHECK_1;
 		STATE_UP_0: 	STATE_Signal = STATE_CHECK_1;
 		STATE_DOWN_0: 	STATE_Signal = STATE_CHECK_1;
 		STATE_LEFT_0:  	STATE_Signal = STATE_CHECK_1;
@@ -119,7 +116,6 @@ begin
 //=========================================================
 	STATE_RESET_0 :	
 		begin
-			SC_STATEMACHINEPOINT_clear_OutLow = 1'b1;
 			SC_STATEMACHINEPOINT_load0_OutLow = 1'b1;
 			SC_STATEMACHINEPOINT_load1_OutLow = 1'b1;
 			SC_STATEMACHINEPOINT_shiftselection_Out  = 2'b11; 
@@ -129,7 +125,6 @@ begin
 //=========================================================
 	STATE_START_0 :	
 		begin
-			SC_STATEMACHINEPOINT_clear_OutLow = 1'b1;
 			SC_STATEMACHINEPOINT_load0_OutLow = 1'b1;
 			SC_STATEMACHINEPOINT_load1_OutLow = 1'b1;
 			SC_STATEMACHINEPOINT_shiftselection_Out  = 2'b11; 
@@ -139,7 +134,6 @@ begin
 //=========================================================
 	STATE_CHECK_0 :
 		begin
-			SC_STATEMACHINEPOINT_clear_OutLow = 1'b1;
 			SC_STATEMACHINEPOINT_load0_OutLow = 1'b1;
 			SC_STATEMACHINEPOINT_load1_OutLow = 1'b1;
 			SC_STATEMACHINEPOINT_shiftselection_Out  = 2'b11; 
@@ -149,17 +143,6 @@ begin
 //=========================================================
 	STATE_CHECK_1 :
 		begin
-			SC_STATEMACHINEPOINT_clear_OutLow = 1'b1;
-			SC_STATEMACHINEPOINT_load0_OutLow = 1'b1;
-			SC_STATEMACHINEPOINT_load1_OutLow = 1'b1;
-			SC_STATEMACHINEPOINT_shiftselection_Out  = 2'b11; 
-		end
-//=========================================================
-// STATE_INIT_0
-//=========================================================
-	STATE_INIT_0 :	
-		begin
-			SC_STATEMACHINEPOINT_clear_OutLow = 1'b0;
 			SC_STATEMACHINEPOINT_load0_OutLow = 1'b1;
 			SC_STATEMACHINEPOINT_load1_OutLow = 1'b1;
 			SC_STATEMACHINEPOINT_shiftselection_Out  = 2'b11; 
@@ -169,9 +152,8 @@ begin
 //=========================================================
 	STATE_UP_0 :	
 		begin
-			SC_STATEMACHINEPOINT_clear_OutLow = 1'b1;
-			SC_STATEMACHINEPOINT_load0_OutLow = 1'b0;
-			SC_STATEMACHINEPOINT_load1_OutLow = 1'b1;
+			SC_STATEMACHINEPOINT_load0_OutLow = 1'b1;
+			SC_STATEMACHINEPOINT_load1_OutLow = 1'b0;
 			SC_STATEMACHINEPOINT_shiftselection_Out  = 2'b11; 
 		end
 //=========================================================
@@ -179,9 +161,8 @@ begin
 //=========================================================
 	STATE_DOWN_0 :	
 		begin
-			SC_STATEMACHINEPOINT_clear_OutLow = 1'b1;
-			SC_STATEMACHINEPOINT_load0_OutLow = 1'b1;
-			SC_STATEMACHINEPOINT_load1_OutLow = 1'b0;
+			SC_STATEMACHINEPOINT_load0_OutLow = 1'b0;
+			SC_STATEMACHINEPOINT_load1_OutLow = 1'b1;
 			SC_STATEMACHINEPOINT_shiftselection_Out  = 2'b11; 
 		end
 //=========================================================
@@ -189,7 +170,6 @@ begin
 //=========================================================
 	STATE_LEFT_0 :	
 		begin
-			SC_STATEMACHINEPOINT_clear_OutLow = 1'b1;
 			SC_STATEMACHINEPOINT_load0_OutLow = 1'b1;
 			SC_STATEMACHINEPOINT_load1_OutLow = 1'b1;
 			SC_STATEMACHINEPOINT_shiftselection_Out  = 2'b01; 
@@ -199,7 +179,6 @@ begin
 //=========================================================
 	STATE_RIGHT_0 :	
 		begin
-			SC_STATEMACHINEPOINT_clear_OutLow = 1'b1;
 			SC_STATEMACHINEPOINT_load0_OutLow = 1'b1;
 			SC_STATEMACHINEPOINT_load1_OutLow = 1'b1;
 			SC_STATEMACHINEPOINT_shiftselection_Out  = 2'b10; 
@@ -210,7 +189,6 @@ begin
 //=========================================================
 	default :
 		begin
-			SC_STATEMACHINEPOINT_clear_OutLow = 1'b1;
 			SC_STATEMACHINEPOINT_load0_OutLow = 1'b1;
 			SC_STATEMACHINEPOINT_load1_OutLow = 1'b1;
 			SC_STATEMACHINEPOINT_shiftselection_Out  = 2'b11; 

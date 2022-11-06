@@ -26,7 +26,7 @@ module SC_STATEMACHINEBACKG (
 	SC_STATEMACHINEBACKG_CLOCK_50,
 	SC_STATEMACHINEBACKG_RESET_InHigh,
 	SC_STATEMACHINEBACKG_startGame_InLow,
-	SC_STATEMACHINEBACKG_T0_InLow
+	SC_STATEMACHINEBACKG_movement_InLow
 );	
 //=======================================================
 //  PARAMETER declarations
@@ -35,10 +35,9 @@ module SC_STATEMACHINEBACKG (
 localparam STATE_RESET_0									= 0;
 localparam STATE_START_0									= 1;
 localparam STATE_CHECK_0									= 2;
-localparam STATE_INIT_0										= 3;
-localparam STATE_SHIFT_0									= 4;
-localparam STATE_COUNT_0									= 5;
-localparam STATE_CHECK_1									= 6;
+localparam STATE_SHIFT_0									= 3;
+localparam STATE_COUNT_0									= 4;
+localparam STATE_CHECK_1									= 5;
 //=======================================================
 //  PORT declarations
 //=======================================================
@@ -47,7 +46,7 @@ output reg 		SC_STATEMACHINEBACKG_upcount_out;
 input			SC_STATEMACHINEBACKG_CLOCK_50;
 input 			SC_STATEMACHINEBACKG_RESET_InHigh;
 input			SC_STATEMACHINEBACKG_startGame_InLow;
-input			SC_STATEMACHINEBACKG_T0_InLow;
+input			SC_STATEMACHINEBACKG_movement_InLow;
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
@@ -63,10 +62,9 @@ begin
 	case (STATE_Register)
 		STATE_RESET_0: STATE_Signal = STATE_START_0;
 		STATE_START_0: STATE_Signal = STATE_CHECK_0;
-		STATE_CHECK_0: if (SC_STATEMACHINEBACKG_startGame_InLow == 1'b0) STATE_Signal = STATE_INIT_0;
-						else if (SC_STATEMACHINEBACKG_T0_InLow == 1'b0) STATE_Signal = STATE_SHIFT_0;
+		STATE_CHECK_0: if (SC_STATEMACHINEBACKG_startGame_InLow == 1'b0) STATE_Signal = STATE_CHECK_1;
+						else if (SC_STATEMACHINEBACKG_movement_InLow == 1'b0) STATE_Signal = STATE_SHIFT_0;
 						else STATE_Signal = STATE_COUNT_0;
-		STATE_INIT_0:	STATE_Signal = STATE_CHECK_1;
 		STATE_SHIFT_0: 	STATE_Signal = STATE_COUNT_0;
 		STATE_COUNT_0: 	STATE_Signal = STATE_CHECK_0;
 		
@@ -119,14 +117,6 @@ begin
 // STATE_CHECK
 //=========================================================
 	STATE_CHECK_1 :
-		begin
-			SC_STATEMACHINEBACKG_shiftselection_OutBus  = 2'b11; 
-			SC_STATEMACHINEBACKG_upcount_out = 1'b1;
-		end
-//=========================================================
-// STATE_INIT
-//=========================================================
-	STATE_INIT_0 :	
 		begin
 			SC_STATEMACHINEBACKG_shiftselection_OutBus  = 2'b11; 
 			SC_STATEMACHINEBACKG_upcount_out = 1'b1;
