@@ -61,12 +61,12 @@ begin
 	if (SC_upTRANSITIONCOUNTER1_RESET_InHigh  == 1'b1)
 		upTRANSITIONCOUNTER1_Register <= 0;
 	else
-		upTRANSITIONCOUNTER1_Register <= upTRANSITION0COUNTER1_Signal;
+		upTRANSITIONCOUNTER1_Register <= upTRANSITIONCOUNTER1_Signal;
 end
 //=======================================================
 //  Outputs
 //=======================================================
 //OUTPUT LOGIC: COMBINATIONAL
-assign SC_upTRANSITIONCOUNTER1_data_OutBUS = upTRANSITION0COUNTER1_Register;
+assign SC_upTRANSITIONCOUNTER1_data_OutBUS = upTRANSITIONCOUNTER1_Register;
 
 endmodule
