@@ -55,7 +55,7 @@ localparam STATE_HOUSE_0									= 10;
 //=======================================================
 output reg 		SC_STATEMACHINEGAME_ClearLost_OutLow;
 output reg		SC_STATEMACHINEGAME_LifesSignal_OutLow;
-output reg 		SC_STATEMACHINEGAME_LoadLastRegister_OutLow
+output reg 		SC_STATEMACHINEGAME_LoadLastRegister_OutLow;
 output reg		SC_STATEMACHINEGAME_StartGame_OutLow;
 output reg		SC_STATEMACHINEGAME_LoadGame_OutLow;
 input			SC_STATEMACHINEGAME_CLOCK_50;
