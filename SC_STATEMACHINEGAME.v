@@ -25,6 +25,8 @@ module SC_STATEMACHINEGAME (
 	SC_STATEMACHINEGAME_LoadLastRegister_OutLow,
 	SC_STATEMACHINEGAME_startGame_OutLow,
 	SC_STATEMACHINEGAME_LoadGame_OutLow,
+	SC_STATEMACHINEGAME_TransitionCounter1_OutLow,
+	SC_STATEMACHINEGAME_clearPoint_OutLow,
 	//////////// INPUTS //////////
 	SC_STATEMACHINEGAME_CLOCK_50,
 	SC_STATEMACHINEGAME_RESET_InHigh,
@@ -40,11 +42,11 @@ module SC_STATEMACHINEGAME (
 // states declaration
 localparam STATE_RESET_0									= 0;
 localparam STATE_START_0									= 1;
-localparam STATE_CHECK_0									= 2;
-localparam STATE_LOSEGAME_0									= 3;
-localparam STATE_LOSEGAME_1									= 4;
-localparam STATE_WINGAME_0									= 5;
-localparam STATE_WINGAME_1									= 6;
+localparam STATE_START_0									= 2;
+localparam STATE_CHECK_0									= 3;
+localparam STATE_LOSEGAME_0									= 4;
+localparam STATE_WAIT_0										= 5;
+localparam STATE_WINGAME_0									= 6;
 localparam STATE_LOSELIFE_0									= 7; 
 localparam STATE_NEXTLEVEL_0								= 8; 
 localparam STATE_NEXTLEVEL_1								= 9; 
@@ -58,6 +60,8 @@ output reg		SC_STATEMACHINEGAME_LifesSignal_OutLow;
 output reg 		SC_STATEMACHINEGAME_LoadLastRegister_OutLow;
 output reg		SC_STATEMACHINEGAME_StartGame_OutLow;
 output reg		SC_STATEMACHINEGAME_LoadGame_OutLow;
+output reg 		SC_STATEMACHINEGAME_TransitionCounter1_OutLow;
+output reg		SC_STATEMACHINEGAME_clearPoint_OutLow;	
 input			SC_STATEMACHINEGAME_CLOCK_50;
 input 			SC_STATEMACHINEGAME_RESET_InHigh;
 input			[1:0] SC_STATEMACHINEGAME_LastRegister_InBUS;
@@ -78,22 +82,21 @@ reg [3:0] STATE_Signal;
 always @(*)
 begin
 	case (STATE_Register)
-		STATE_RESET_0: if (SC_STATEMACHINEGAME_startButton_InLow == 1'b0) STATE_Signal = STATE_START_0;
-						else STATE_Signal = STATE_RESET_0;
-		STATE_START_0: STATE_Signal = STATE_CHECK_0;
+		STATE_RESET_0: STATE_Signal = STATE_START_0;
+		STATE_START_0: if (SC_STATEMACHINEGAME_startButton_InLow == 1'b0) STATE_Signal = STATE_START_1;
+						else STATE_Signal = STATE_START_0;
+		STATE_START_1: STATE_Signal = STATE_CHECK_0;
 		STATE_CHECK_0: if (SC_STATEMACHINEGAME_LifesCounterComparator_InLow == 1'b0) STATE_Signal = STATE_LOSEGAME_0;
 						else if (SC_STATEMACHINEGAME_LevelCounterComparator_InLow == 1'b0) STATE_Signal = STATE_WINGAME_0;
 						else if (SC_STATEMACHINEGAME_MatrixComparator_InLow== 1'b0) STATE_Signal = STATE_LOSELIFE_0;
 						else if (SC_STATEMACHINEGAME_LastRegister_InBUS == 2'b00) STATE_Signal = STATE_NEXTLEVEL_0;
 						else if (SC_STATEMACHINEGAME_LastRegister_InBUS == 2'b10) STATE_Signal = STATE_HOUSE_0;
 						else STATE_Signal = STATE_CHECK_0;
-		STATE_LOSEGAME_0: 	STATE_Signal = STATE_LOSEGAME_1;
-		STATE_LOSEGAME_1: 	STATE_Signal = STATE_LOSEGAME_1;
+		STATE_LOSEGAME_0: 	STATE_Signal = STATE_WAIT_0;
+		STATE_WAIT_0: 	STATE_Signal = STATE_WAIT_0;
 		STATE_LOSELIFE_0: 	STATE_Signal = STATE_CHECK_0;
-		STATE_WINGAME_0:  	STATE_Signal = STATE_WINGAME_1;
-		STATE_WINGAME_1: 	STATE_Signal = STATE_WINGAME_1;
+		STATE_WINGAME_0:  	STATE_Signal = STATE_WAIT_0;
 		STATE_NEXTLEVEL_0:  STATE_Signal = STATE_NEXTLEVEL_1;
-
 		STATE_NEXTLEVEL_1: STATE_Signal = STATE_CHECK_0;
 		STATE_HOUSE_0: STATE_Signal = STATE_CHECK_0;
 		default : 		STATE_Signal = STATE_CHECK_0;
@@ -124,7 +127,8 @@ begin
 			SC_STATEMACHINEGAME_LoadLastRegister_OutLow = 1'b1;
 			SC_STATEMACHINEGAME_StartGame_OutLow  = 1'b1;
 			SC_STATEMACHINEGAME_LoadGame_OutLow  = 1'b1;
-
+			SC_STATEMACHINEGAME_TransitionCounter1_OutLow = 1'b1;
+			SC_STATEMACHINEGAME_clearPoint_OutLow = 1'b1;
 		end
 //=========================================================
 // STATE_START
@@ -134,8 +138,21 @@ begin
 			SC_STATEMACHINEGAME_ClearLost_OutLow = 1'b1;
 			SC_STATEMACHINEGAME_LifesSignal_OutLow = 1'b1;
 			SC_STATEMACHINEGAME_LoadLastRegister_OutLow = 1'b1;
+			SC_STATEMACHINEGAME_StartGame_OutLow  = 1'b1;
+			SC_STATEMACHINEGAME_LoadGame_OutLow  = 1'b1;
+			SC_STATEMACHINEGAME_TransitionCounter1_OutLow = 1'b1;
+			SC_STATEMACHINEGAME_clearPoint_OutLow = 1'b1;
+		end
+
+	STATE_START_1 :	
+		begin
+			SC_STATEMACHINEGAME_ClearLost_OutLow = 1'b1;
+			SC_STATEMACHINEGAME_LifesSignal_OutLow = 1'b1;
+			SC_STATEMACHINEGAME_LoadLastRegister_OutLow = 1'b1;
 			SC_STATEMACHINEGAME_StartGame_OutLow  = 1'b0;
 			SC_STATEMACHINEGAME_LoadGame_OutLow  = 1'b1;
+			SC_STATEMACHINEGAME_TransitionCounter1_OutLow = 1'b1;
+			SC_STATEMACHINEGAME_clearPoint_OutLow = 1'b0;
 		end
 //=========================================================
 // STATE_CHECK
@@ -147,29 +164,37 @@ begin
 			SC_STATEMACHINEGAME_LoadLastRegister_OutLow = 1'b1;
 			SC_STATEMACHINEGAME_StartGame_OutLow  = 1'b1;
 			SC_STATEMACHINEGAME_LoadGame_OutLow  = 1'b1;
+			SC_STATEMACHINEGAME_TransitionCounter1_OutLow = 1'b1;
+			SC_STATEMACHINEGAME_clearPoint_OutLow = 1'b1;
 		end
 //=========================================================
-// STATE_LOSEGAME
+// STATE_LOSEGAME_0
 //=========================================================
 	STATE_LOSEGAME_0 :
 		begin
-			SSC_STATEMACHINEGAME_ClearLost_OutLow = 1'b0;
+			SC_STATEMACHINEGAME_ClearLost_OutLow = 1'b0;
 			SC_STATEMACHINEGAME_LifesSignal_OutLow = 1'b1;
 			SC_STATEMACHINEGAME_LoadLastRegister_OutLow = 1'b1;
 			SC_STATEMACHINEGAME_StartGame_OutLow  = 1'b1;
 			SC_STATEMACHINEGAME_LoadGame_OutLow  = 1'b1;
+			SC_STATEMACHINEGAME_TransitionCounter1_OutLow = 1'b1;
+			SC_STATEMACHINEGAME_clearPoint_OutLow = 1'b1;
 		end
-
-	STATE_LOSEGAME_1 :	
+//=========================================================
+// STATE_WAIT_0
+//=========================================================
+	STATE_WAIT_0 :	
 		begin
 			SC_STATEMACHINEGAME_ClearLost_OutLow = 1'b1;
 			SC_STATEMACHINEGAME_LifesSignal_OutLow = 1'b1;
 			SC_STATEMACHINEGAME_LoadLastRegister_OutLow = 1'b1;
 			SC_STATEMACHINEGAME_StartGame_OutLow  = 1'b1;
 			SC_STATEMACHINEGAME_LoadGame_OutLow  = 1'b1;
+			SC_STATEMACHINEGAME_TransitionCounter1_OutLow = 1'b1;
+			SC_STATEMACHINEGAME_clearPoint_OutLow = 1'b1;
 		end
 //=========================================================
-// STATE_WINGAME
+// STATE_WINGAME_0
 //=========================================================
 	STATE_WINGAME_0 :	
 		begin
@@ -178,15 +203,8 @@ begin
 			SC_STATEMACHINEGAME_LoadLastRegister_OutLow = 1'b1;
 			SC_STATEMACHINEGAME_StartGame_OutLow  = 1'b1;
 			SC_STATEMACHINEGAME_LoadGame_OutLow  = 1'b1;
-		end
-
-	STATE_WINGAME_1 :	
-		begin
-			SC_STATEMACHINEGAME_ClearLost_OutLow = 1'b1;
-			SC_STATEMACHINEGAME_LifesSignal_OutLow = 1'b1;
-			SC_STATEMACHINEGAME_LoadLastRegister_OutLow = 1'b1;
-			SC_STATEMACHINEGAME_StartGame_OutLow  = 1'b1;
-			SC_STATEMACHINEGAME_LoadGame_OutLow  = 1'b1;
+			SC_STATEMACHINEGAME_TransitionCounter1_OutLow = 1'b1;
+			SC_STATEMACHINEGAME_clearPoint_OutLow = 1'b1;
 		end
 //=========================================================
 // STATE_LOSELIFE_0
@@ -198,6 +216,8 @@ begin
 			SC_STATEMACHINEGAME_LoadLastRegister_OutLow = 1'b1;
 			SC_STATEMACHINEGAME_StartGame_OutLow  = 1'b1;
 			SC_STATEMACHINEGAME_LoadGame_OutLow  = 1'b1;
+			SC_STATEMACHINEGAME_TransitionCounter1_OutLow = 1'b1;
+			SC_STATEMACHINEGAME_clearPoint_OutLow = 1'b0;
 		end
 //=========================================================
 // STATE_NEXTLEVEL
@@ -209,6 +229,8 @@ begin
 			SC_STATEMACHINEGAME_LoadLastRegister_OutLow = 1'b1;
 			SC_STATEMACHINEGAME_StartGame_OutLow  = 1'b1;
 			SC_STATEMACHINEGAME_LoadGame_OutLow  = 1'b1;
+			SC_STATEMACHINEGAME_TransitionCounter1_OutLow = 1'b0;
+			SC_STATEMACHINEGAME_clearPoint_OutLow = 1'b1;
 		end
 
 	STATE_NEXTLEVEL_1 :
@@ -217,7 +239,9 @@ begin
 			SC_STATEMACHINEGAME_LifesSignal_OutLow = 1'b1;
 			SC_STATEMACHINEGAME_LoadLastRegister_OutLow = 1'b1;
 			SC_STATEMACHINEGAME_StartGame_OutLow  = 1'b1;
-			SC_STATEMACHINEGAME_LoadGame_OutLow  = 1'b1;
+			SC_STATEMACHINEGAME_LoadGame_OutLow  = 1'b0;
+			SC_STATEMACHINEGAME_TransitionCounter1_OutLow = 1'b1;
+			SC_STATEMACHINEGAME_clearPoint_OutLow = 1'b0;
 		end
 //=========================================================
 // STATE_HOUSE_0
@@ -229,6 +253,8 @@ begin
 			SC_STATEMACHINEGAME_LoadLastRegister_OutLow = 1'b0;
 			SC_STATEMACHINEGAME_StartGame_OutLow  = 1'b1;
 			SC_STATEMACHINEGAME_LoadGame_OutLow  = 1'b1;
+			SC_STATEMACHINEGAME_TransitionCounter1_OutLow = 1'b1;
+			SC_STATEMACHINEGAME_clearPoint_OutLow = 1'b0;
 		end
 //=========================================================
 // DEFAULT
@@ -240,6 +266,8 @@ begin
 			SC_STATEMACHINEGAME_LoadLastRegister_OutLow = 1'b1;
 			SC_STATEMACHINEGAME_StartGame_OutLow  = 1'b1;
 			SC_STATEMACHINEGAME_LoadGame_OutLow  = 1'b1;
+			SC_STATEMACHINEGAME_TransitionCounter1_OutLow = 1'b1;
+			SC_STATEMACHINEGAME_clearPoint_OutLow = 1'b1;
 		end
 	endcase
 end
