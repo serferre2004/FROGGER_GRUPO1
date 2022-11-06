@@ -108,6 +108,7 @@ input	CC_GATES_Backreg0_In,
 //=======================================================
 // CC_GATES_and7_Out
 assign CC_GATES_and7_Out = CC_GATES_Pointreg7_In & CC_GATES_Backreg7_In;
+
 // CC_GATES_and6_Out
 assign CC_GATES_and6_Out = CC_GATES_Pointreg6_In & CC_GATES_Backreg6_In;
 // CC_GATES_and5_Out
