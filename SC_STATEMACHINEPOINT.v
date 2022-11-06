@@ -40,12 +40,11 @@ module SC_STATEMACHINEPOINT (
 localparam STATE_RESET_0									= 0;
 localparam STATE_START_0									= 1;
 localparam STATE_CHECK_0									= 2;
-localparam STATE_INIT_0										= 3;
-localparam STATE_UP_0										= 4;
-localparam STATE_DOWN_0										= 5; 
-localparam STATE_LEFT_0										= 6; 
-localparam STATE_RIGHT_0									= 7;
-localparam STATE_CHECK_1									= 8;
+localparam STATE_UP_0										= 3;
+localparam STATE_DOWN_0										= 4; 
+localparam STATE_LEFT_0										= 5; 
+localparam STATE_RIGHT_0									= 6;
+localparam STATE_CHECK_1									= 7;
 //=======================================================
 //  PORT declarations
 //=======================================================
