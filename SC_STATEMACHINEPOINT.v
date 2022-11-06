@@ -34,7 +34,6 @@ module SC_STATEMACHINEPOINT (
 	SC_STATEMACHINEPOINT_rightButton_InLow,
 	SC_STATEMACHINEPOINT_FirstRegisterCOMPARATOR_firstreg_InLow
 );	
-
 //=======================================================
 //  PARAMETER declarations
 //=======================================================
