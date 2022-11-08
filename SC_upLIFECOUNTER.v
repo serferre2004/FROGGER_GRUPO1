@@ -52,7 +52,7 @@ reg [upLIFECOUNTER_DATAWIDTH-1:0] upLIFECOUNTER_Signal;
 always @(*)
 begin
 	if (SC_upLIFECOUNTER_CLEAR_InLow == 1'b0)
-		upLIFECOUNTER_Signal=0;
+		upLIFECOUNTER_Signal= 0'b0;
 	else if (SC_upLIFECOUNTER_upcount_InLow == 1'b0)
 		upLIFECOUNTER_Signal = upLIFECOUNTER_Register + 1'b1;
 	else

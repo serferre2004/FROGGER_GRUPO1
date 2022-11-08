@@ -52,7 +52,7 @@ reg [upSPEEDCOUNTER_DATAWIDTH-1:0] upSPEEDCOUNTER_Signal;
 always @(*)
 begin
 	if (SC_upSOEEDCOUNTER_CLEAR_InLow == 1'b0)
-		upSPEEDCOUNTER_Signal= 0;
+		upSPEEDCOUNTER_Signal= 0'b0;
 	if (SC_upSPEEDCOUNTER_upcount_InLow == 1'b0)
 		upSPEEDCOUNTER_Signal = upSPEEDCOUNTER_Register + 1'b1;
 	else
