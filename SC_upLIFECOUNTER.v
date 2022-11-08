@@ -24,7 +24,8 @@ module SC_upLIFECOUNTER #(parameter upLIFECOUNTER_DATAWIDTH=8)(
 	//////////// INPUTS //////////
 	SC_upLIFECOUNTER_CLOCK_50,
 	SC_upLIFECOUNTER_RESET_InHigh,
-	SC_upLIFECOUNTER_upcount_InLow
+	SC_upLIFECOUNTER_upcount_InLow,
+	SC_upLIFECOUNTER_CLEAR_InLow
 );
 //=======================================================
 //  PARAMETER declarations
@@ -37,6 +38,7 @@ output		[upLIFECOUNTER_DATAWIDTH-1:0]	SC_upLIFECOUNTER_data_OutBUS;
 input		SC_upLIFECOUNTER_CLOCK_50;
 input		SC_upLIFECOUNTER_RESET_InHigh;
 input		SC_upLIFECOUNTER_upcount_InLow;
+input 		SC_upLIFECOUNTER_CLEAR_InLow;
 
 //=======================================================
 //  REG/WIRE declarations
@@ -49,7 +51,9 @@ reg [upLIFECOUNTER_DATAWIDTH-1:0] upLIFECOUNTER_Signal;
 //INPUT LOGIC: COMBINATIONAL
 always @(*)
 begin
-	if (SC_upLIFECOUNTER_upcount_InLow == 1'b0)
+	if (SC_upLIFECOUNTER_CLEAR_InLow == 1'b0)
+		upLIFECOUNTER_Signal=0;
+	else if (SC_upLIFECOUNTER_upcount_InLow == 1'b0)
 		upLIFECOUNTER_Signal = upLIFECOUNTER_Register + 1'b1;
 	else
 		upLIFECOUNTER_Signal = upLIFECOUNTER_Register;
