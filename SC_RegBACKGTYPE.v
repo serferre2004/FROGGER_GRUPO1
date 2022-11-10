@@ -50,6 +50,7 @@ input		[2:0] SC_RegBACKGTYPE_transitioncounter_InBUS;
 //=======================================================
 reg [RegBACKGTYPE_DATAWIDTH-1:0] RegBACKGTYPE_Register;
 reg [RegBACKGTYPE_DATAWIDTH-1:0] RegBACKGTYPE_Signal;
+reg [RegBACKGTYPE_DATAWIDTH-1:0] LastRegBACKGTYPE_Level;
 //=======================================================
 //  Structural coding
 //=======================================================
@@ -59,15 +60,15 @@ begin
 	if (SC_RegBACKGTYPE_clear_InLow == 1'b0)
 		RegBACKGTYPE_Signal = DATA_FIXED_INITREGBACKG;
 	else if (SC_RegBACKGTYPE_transitioncounter_InBUS == 2'b00)
-		RegBACKGTYPE_Signal = DATA_FIXED_LEVEL1REGBACKG;
+		RegBACKGTYPE_Level = DATA_FIXED_LEVEL1REGBACKG;
 	else if (SC_RegBACKGTYPE_transitioncounter_InBUS == 2'b01)
-		RegBACKGTYPE_Signal = DATA_FIXED_LEVEL2REGBACKG;
+		RegBACKGTYPE_Level = DATA_FIXED_LEVEL2REGBACKG;
 	else if (SC_RegBACKGTYPE_transitioncounter_InBUS == 2'b10)
-		RegBACKGTYPE_Signal = DATA_FIXED_LEVEL3REGBACKG;
+		RegBACKGTYPE_Level = DATA_FIXED_LEVEL3REGBACKG;
 	else if (SC_RegBACKGTYPE_transitioncounter_InBUS == 2'b11)
-		RegBACKGTYPE_Signal = DATA_FIXED_LEVEL4REGBACKG;
+		RegBACKGTYPE_Level = DATA_FIXED_LEVEL4REGBACKG;
 	else if (SC_RegBACKGTYPE_load_InLow == 1'b0)
-		RegBACKGTYPE_Signal = SC_RegBACKGTYPE_data_InBUS;
+		RegBACKGTYPE_Signal = RegBACKGTYPE_Level;
 	else if (SC_RegBACKGTYPE_shiftselection_In == 2'b01)
 		RegBACKGTYPE_Signal = {RegBACKGTYPE_Register[RegBACKGTYPE_DATAWIDTH-2:0],RegBACKGTYPE_Register[RegBACKGTYPE_DATAWIDTH-1]};
 	else if (SC_RegBACKGTYPE_shiftselection_In== 2'b10)

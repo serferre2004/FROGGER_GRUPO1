@@ -62,17 +62,17 @@ begin
 	if (SC_LastRegBACKGTYPE_clear_InLow == 1'b0)
 		LastRegBACKGTYPE_Signal = DATA_FIXED_INITREGBACKG;
 	else if (SC_RegBACKGTYPE_transitioncounter_InBUS == 2'b00)
-		LastRegBACKGTYPE_Level = (DATA_FIXED_LEVEL1REGBACKG) | SC_LastRegBACKGTYPE_lastpointreg_InBUS;
+		LastRegBACKGTYPE_Level = (DATA_FIXED_LEVEL1REGBACKG);
 	else if (SC_RegBACKGTYPE_transitioncounter_InBUS == 2'b01)
-		LastRegBACKGTYPE_Level = (DATA_FIXED_LEVEL1REGBACKG) | SC_LastRegBACKGTYPE_lastpointreg_InBUS;
+		LastRegBACKGTYPE_Level = (DATA_FIXED_LEVEL1REGBACKG);
 	else if (SC_RegBACKGTYPE_transitioncounter_InBUS == 2'b10)
-		LastRegBACKGTYPE_Level = (DATA_FIXED_LEVEL1REGBACKG) | SC_LastRegBACKGTYPE_lastpointreg_InBUS;
+		LastRegBACKGTYPE_Level = (DATA_FIXED_LEVEL1REGBACKG);
 	else if (SC_RegBACKGTYPE_transitioncounter_InBUS == 2'b11)
-		LastRegBACKGTYPE_Level = (DATA_FIXED_LEVEL1REGBACKG) | SC_LastRegBACKGTYPE_lastpointreg_InBUS;
+		LastRegBACKGTYPE_Level = (DATA_FIXED_LEVEL1REGBACKG);
 	else if (SC_LastRegBACKGTYPE_load_InLow == 1'b0)
 		LastRegBACKGTYPE_Signal = LastRegBACKGTYPE_Level;
 	else if (SC_LastRegBACKGTYPE_LoadFinalRegister_InLow == 1'b0)
-		LastRegBACKGTYPE_Signal = LastRegBACKGTYPE_Level;
+		LastRegBACKGTYPE_Signal = LastRegBACKGTYPE_Level | SC_LastRegBACKGTYPE_lastpointreg_InBUS;
 	else if (SC_LastRegBACKGTYPE_shiftselection_In == 2'b01)
 		LastRegBACKGTYPE_Signal = {LastRegBACKGTYPE_Register[RegBACKGTYPE_DATAWIDTH-2:0],LastRegBACKGTYPE_Register[RegBACKGTYPE_DATAWIDTH-1]};
 	else if (SC_LastRegBACKGTYPE_shiftselection_In== 2'b10)
