@@ -359,7 +359,7 @@ SC_RegBACKGTYPE #(.RegBACKGTYPE_DATAWIDTH(DATAWIDTH_BUS), .DATA_FIXED_INITREGBAC
 	.SC_RegBACKGTYPE_clear_InLow(),	
 	.SC_RegBACKGTYPE_load_InLow(),
 	.SC_RegBACKGTYPE_shiftselection_In(),
-	.SC_RegBACKGTYPE_data_InBUS()
+	.SC_RegBACKGTYPE_transitioncounter_InBUS()
 );
 SC_RegBACKGTYPE #(.RegBACKGTYPE_DATAWIDTH(DATAWIDTH_BUS), .DATA_FIXED_INITREGBACKG(DATA_FIXED_INITREGBACKG_6)) SC_RegBACKGTYPE_u6 (
 // port map - connection between master ports and signals/registers   
@@ -369,7 +369,7 @@ SC_RegBACKGTYPE #(.RegBACKGTYPE_DATAWIDTH(DATAWIDTH_BUS), .DATA_FIXED_INITREGBAC
 	.SC_RegBACKGTYPE_clear_InLow(),	
 	.SC_RegBACKGTYPE_load_InLow(),
 	.SC_RegBACKGTYPE_shiftselection_In(),
-	.SC_RegBACKGTYPE_data_InBUS()
+	.SC_RegBACKGTYPE_transitioncounter_InBUS()
 );
 SC_RegBACKGTYPE #(.RegBACKGTYPE_DATAWIDTH(DATAWIDTH_BUS), .DATA_FIXED_INITREGBACKG(DATA_FIXED_INITREGBACKG_5)) SC_RegBACKGTYPE_u5 (
 // port map - connection between master ports and signals/registers   
@@ -379,7 +379,7 @@ SC_RegBACKGTYPE #(.RegBACKGTYPE_DATAWIDTH(DATAWIDTH_BUS), .DATA_FIXED_INITREGBAC
 	.SC_RegBACKGTYPE_clear_InLow(),	
 	.SC_RegBACKGTYPE_load_InLow(),
 	.SC_RegBACKGTYPE_shiftselection_In(),
-	.SC_RegBACKGTYPE_data_InBUS()
+	.SC_RegBACKGTYPE_transitioncounter_InBUS()
 );
 SC_RegBACKGTYPE #(.RegBACKGTYPE_DATAWIDTH(DATAWIDTH_BUS), .DATA_FIXED_INITREGBACKG(DATA_FIXED_INITREGBACKG_4)) SC_RegBACKGTYPE_u4 (
 // port map - connection between master ports and signals/registers   
@@ -389,7 +389,7 @@ SC_RegBACKGTYPE #(.RegBACKGTYPE_DATAWIDTH(DATAWIDTH_BUS), .DATA_FIXED_INITREGBAC
 	.SC_RegBACKGTYPE_clear_InLow(),	
 	.SC_RegBACKGTYPE_load_InLow(),
 	.SC_RegBACKGTYPE_shiftselection_In(),
-	.SC_RegBACKGTYPE_data_InBUS()
+	.SC_RegBACKGTYPE_transitioncounter_InBUS()
 );
 SC_RegBACKGTYPE #(.RegBACKGTYPE_DATAWIDTH(DATAWIDTH_BUS), .DATA_FIXED_INITREGBACKG(DATA_FIXED_INITREGBACKG_3)) SC_RegBACKGTYPE_u3 (
 // port map - connection between master ports and signals/registers   
@@ -399,7 +399,7 @@ SC_RegBACKGTYPE #(.RegBACKGTYPE_DATAWIDTH(DATAWIDTH_BUS), .DATA_FIXED_INITREGBAC
 	.SC_RegBACKGTYPE_clear_InLow(),	
 	.SC_RegBACKGTYPE_load_InLow(),
 	.SC_RegBACKGTYPE_shiftselection_In(),
-	.SC_RegBACKGTYPE_data_InBUS()
+	.SC_RegBACKGTYPE_transitioncounter_InBUS()
 );
 SC_RegBACKGTYPE #(.RegBACKGTYPE_DATAWIDTH(DATAWIDTH_BUS), .DATA_FIXED_INITREGBACKG(DATA_FIXED_INITREGBACKG_2)) SC_RegBACKGTYPE_u2 (
 // port map - connection between master ports and signals/registers   
@@ -409,7 +409,7 @@ SC_RegBACKGTYPE #(.RegBACKGTYPE_DATAWIDTH(DATAWIDTH_BUS), .DATA_FIXED_INITREGBAC
 	.SC_RegBACKGTYPE_clear_InLow(),	
 	.SC_RegBACKGTYPE_load_InLow(),
 	.SC_RegBACKGTYPE_shiftselection_In(),
-	.SC_RegBACKGTYPE_data_InBUS()
+	.SC_RegBACKGTYPE_transitioncounter_InBUS()
 );
 SC_RegBACKGTYPE #(.RegBACKGTYPE_DATAWIDTH(DATAWIDTH_BUS), .DATA_FIXED_INITREGBACKG(DATA_FIXED_INITREGBACKG_1)) SC_RegBACKGTYPE_u1 (
 // port map - connection between master ports and signals/registers   
@@ -419,7 +419,7 @@ SC_RegBACKGTYPE #(.RegBACKGTYPE_DATAWIDTH(DATAWIDTH_BUS), .DATA_FIXED_INITREGBAC
 	.SC_RegBACKGTYPE_clear_InLow(),	
 	.SC_RegBACKGTYPE_load_InLow(),
 	.SC_RegBACKGTYPE_shiftselection_In(),
-	.SC_RegBACKGTYPE_data_InBUS()
+	.SC_RegBACKGTYPE_transitioncounter_InBUS()
 );
 SC_LastRegBACKGTYPE #(.LastRegBACKGTYPE_DATAWIDTH(DATAWIDTH_BUS), .DATA_FIXED_INITREGBACKG(DATA_FIXED_INITREGBACKG_0)) SC_LastRegBACKGTYPE_u0 (
 // port map - connection between master ports and signals/registers   
@@ -429,7 +429,8 @@ SC_LastRegBACKGTYPE #(.LastRegBACKGTYPE_DATAWIDTH(DATAWIDTH_BUS), .DATA_FIXED_IN
 	.SC_LastRegBACKGTYPE_clear_InLow(),	
 	.SC_LastRegBACKGTYPE_load_InLow(),
 	.SC_LastRegBACKGTYPE_shiftselection_In(),
-	.SC_LastRegBACKGTYPE_data_InBUS()
+	.SC_LastRegBACKGTYPE_transitioncounter_InBUS(),
+	.SC_LastRegBACKGTYPE_lastpointreg_InBUS(),
 	.SC_LastRegBACKGTYPE_LoadFinalRegister_InBUS()
 );
 

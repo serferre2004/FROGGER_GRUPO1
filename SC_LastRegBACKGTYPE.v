@@ -18,7 +18,7 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module SC_LastRegBACKGTYPE #(parameter RegBACKGTYPE_DATAWIDTH=8, parameter DATA_FIXED_INITREGBACKG=8'b00000000)(
+module SC_LastRegBACKGTYPE #(parameter RegBACKGTYPE_DATAWIDTH=8, parameter DATA_FIXED_INITREGBACKG=8'b00000000, parameter DATA_FIXED_LEVEL1REGBACKG=8'b00000000, parameter DATA_FIXED_LEVEL2REGBACKG=8'b00000000, parameter DATA_FIXED_LEVEL3REGBACKG=8'b00000000, parameter DATA_FIXED_LEVEL4REGBACKG=8'b00000000)(
 	//////////// OUTPUTS //////////
 	SC_LastRegBACKGTYPE_data_OutBUS,
 	//////////// INPUTS //////////
@@ -27,7 +27,8 @@ module SC_LastRegBACKGTYPE #(parameter RegBACKGTYPE_DATAWIDTH=8, parameter DATA_
 	SC_LastRegBACKGTYPE_clear_InLow, 
 	SC_LastRegBACKGTYPE_load_InLow, 
 	SC_LastRegBACKGTYPE_shiftselection_In,
-	SC_LastRegBACKGTYPE_data_InBUS,
+	SC_LastRegBACKGTYPE_transitioncounter_InBUS,
+	SC_LastRegBACKGTYPE_lastpointreg_InBUS,
 	SC_LastRegBACKGTYPE_LoadFinalRegister_InLow
 );
 //=======================================================
@@ -43,13 +44,15 @@ input		SC_LastRegBACKGTYPE_RESET_InHigh;
 input		SC_LastRegBACKGTYPE_clear_InLow;
 input		SC_LastRegBACKGTYPE_load_InLow;	
 input		[1:0] SC_LastRegBACKGTYPE_shiftselection_In;
-input		[RegBACKGTYPE_DATAWIDTH-1:0]	SC_LastRegBACKGTYPE_data_InBUS;
+input		[1:0] SC_LastRegBACKGTYPE_transitioncounter_InBUS;
+input		[RegBACKGTYPE_DATAWIDTH-1:0]	SC_LastRegBACKGTYPE_lastpointreg_InBUS;
 
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
 reg [RegBACKGTYPE_DATAWIDTH-1:0] LastRegBACKGTYPE_Register;
 reg [RegBACKGTYPE_DATAWIDTH-1:0] LastRegBACKGTYPE_Signal;
+reg [RegBACKGTYPE_DATAWIDTH-1:0] LastRegBACKGTYPE_Level;
 //=======================================================
 //  Structural coding
 //=======================================================
@@ -58,10 +61,18 @@ always @(*)
 begin
 	if (SC_LastRegBACKGTYPE_clear_InLow == 1'b0)
 		LastRegBACKGTYPE_Signal = DATA_FIXED_INITREGBACKG;
+	else if (SC_RegBACKGTYPE_transitioncounter_InBUS == 2'b00)
+		LastRegBACKGTYPE_Level = (DATA_FIXED_LEVEL1REGBACKG) | SC_LastRegBACKGTYPE_lastpointreg_InBUS;
+	else if (SC_RegBACKGTYPE_transitioncounter_InBUS == 2'b01)
+		LastRegBACKGTYPE_Level = (DATA_FIXED_LEVEL1REGBACKG) | SC_LastRegBACKGTYPE_lastpointreg_InBUS;
+	else if (SC_RegBACKGTYPE_transitioncounter_InBUS == 2'b10)
+		LastRegBACKGTYPE_Level = (DATA_FIXED_LEVEL1REGBACKG) | SC_LastRegBACKGTYPE_lastpointreg_InBUS;
+	else if (SC_RegBACKGTYPE_transitioncounter_InBUS == 2'b11)
+		LastRegBACKGTYPE_Level = (DATA_FIXED_LEVEL1REGBACKG) | SC_LastRegBACKGTYPE_lastpointreg_InBUS;
 	else if (SC_LastRegBACKGTYPE_load_InLow == 1'b0)
-		LastRegBACKGTYPE_Signal = SC_LastRegBACKGTYPE_data_InBUS;
+		LastRegBACKGTYPE_Signal = LastRegBACKGTYPE_Level;
 	else if (SC_LastRegBACKGTYPE_LoadFinalRegister_InLow == 1'b0)
-		LastRegBACKGTYPE_Signal = SC_LastRegBACKGTYPE_data_InBUS;
+		LastRegBACKGTYPE_Signal = LastRegBACKGTYPE_Level;
 	else if (SC_LastRegBACKGTYPE_shiftselection_In == 2'b01)
 		LastRegBACKGTYPE_Signal = {LastRegBACKGTYPE_Register[RegBACKGTYPE_DATAWIDTH-2:0],LastRegBACKGTYPE_Register[RegBACKGTYPE_DATAWIDTH-1]};
 	else if (SC_LastRegBACKGTYPE_shiftselection_In== 2'b10)

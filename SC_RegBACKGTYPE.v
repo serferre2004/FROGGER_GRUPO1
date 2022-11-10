@@ -18,7 +18,7 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module SC_RegBACKGTYPE #(parameter RegBACKGTYPE_DATAWIDTH=8, parameter DATA_FIXED_INITREGBACKG=8'b00000000)(
+module SC_RegBACKGTYPE #(parameter RegBACKGTYPE_DATAWIDTH=8, parameter DATA_FIXED_INITREGBACKG=8'b00000000, parameter DATA_FIXED_LEVEL1REGBACKG=8'b00000000, parameter DATA_FIXED_LEVEL2REGBACKG=8'b00000000, parameter DATA_FIXED_LEVEL3REGBACKG=8'b00000000, parameter DATA_FIXED_LEVEL4REGBACKG=8'b00000000)(
 	//////////// OUTPUTS //////////
 	SC_RegBACKGTYPE_data_OutBUS,
 	//////////// INPUTS //////////
@@ -27,7 +27,7 @@ module SC_RegBACKGTYPE #(parameter RegBACKGTYPE_DATAWIDTH=8, parameter DATA_FIXE
 	SC_RegBACKGTYPE_clear_InLow, 
 	SC_RegBACKGTYPE_load_InLow, 
 	SC_RegBACKGTYPE_shiftselection_In,
-	SC_RegBACKGTYPE_data_InBUS
+	SC_RegBACKGTYPE_transitioncounter_InBUS
 );
 //=======================================================
 //  PARAMETER declarations
@@ -42,7 +42,8 @@ input		SC_RegBACKGTYPE_RESET_InHigh;
 input		SC_RegBACKGTYPE_clear_InLow;
 input		SC_RegBACKGTYPE_load_InLow;	
 input		[1:0] SC_RegBACKGTYPE_shiftselection_In;
-input		[RegBACKGTYPE_DATAWIDTH-1:0]	SC_RegBACKGTYPE_data_InBUS;
+input		[2:0] SC_RegBACKGTYPE_transitioncounter_InBUS;
+;
 
 //=======================================================
 //  REG/WIRE declarations
@@ -57,6 +58,14 @@ always @(*)
 begin
 	if (SC_RegBACKGTYPE_clear_InLow == 1'b0)
 		RegBACKGTYPE_Signal = DATA_FIXED_INITREGBACKG;
+	else if (SC_RegBACKGTYPE_transitioncounter_InBUS == 2'b00)
+		RegBACKGTYPE_Signal = DATA_FIXED_LEVEL1REGBACKG;
+	else if (SC_RegBACKGTYPE_transitioncounter_InBUS == 2'b01)
+		RegBACKGTYPE_Signal = DATA_FIXED_LEVEL2REGBACKG;
+	else if (SC_RegBACKGTYPE_transitioncounter_InBUS == 2'b10)
+		RegBACKGTYPE_Signal = DATA_FIXED_LEVEL3REGBACKG;
+	else if (SC_RegBACKGTYPE_transitioncounter_InBUS == 2'b11)
+		RegBACKGTYPE_Signal = DATA_FIXED_LEVEL4REGBACKG;
 	else if (SC_RegBACKGTYPE_load_InLow == 1'b0)
 		RegBACKGTYPE_Signal = SC_RegBACKGTYPE_data_InBUS;
 	else if (SC_RegBACKGTYPE_shiftselection_In == 2'b01)
