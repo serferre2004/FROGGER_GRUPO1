@@ -33,7 +33,7 @@ module SC_STATEMACHINEGAME (
 	SC_STATEMACHINEGAME_LastRegister_InBUS,
 	SC_STATEMACHINEGAME_MatrixComparator_InLow,
 	SC_STATEMACHINEGAME_LifesCounterComparator_InLow,
-	SC_STATEMACHINEGAME_LevelCounterComparator_InLow,
+	SC_STATEMACHINEGAME_WINComparator_InLow,
 	SC_STATEMACHINEGAME_startButton_InLow
 );	
 //=======================================================
@@ -67,7 +67,7 @@ input 			SC_STATEMACHINEGAME_RESET_InHigh;
 input			[1:0] SC_STATEMACHINEGAME_LastRegister_InBUS;
 input			SC_STATEMACHINEGAME_MatrixComparator_InLow;
 input			SC_STATEMACHINEGAME_LifesCounterComparator_InLow;
-input			SC_STATEMACHINEGAME_LevelCounterComparator_InLow;
+input			SC_STATEMACHINEGAME_WINComparator_InLow;
 input			SC_STATEMACHINEGAME_startButton_InLow;
 //=======================================================
 //  REG/WIRE declarations
@@ -87,7 +87,7 @@ begin
 						else STATE_Signal = STATE_START_0;
 		STATE_START_1: STATE_Signal = STATE_CHECK_0;
 		STATE_CHECK_0: if (SC_STATEMACHINEGAME_LifesCounterComparator_InLow == 1'b0) STATE_Signal = STATE_LOSEGAME_0;
-						else if (SC_STATEMACHINEGAME_LevelCounterComparator_InLow == 1'b0) STATE_Signal = STATE_WINGAME_0;
+						else if (SC_STATEMACHINEGAME_WINComparator_InLow == 1'b0) STATE_Signal = STATE_WINGAME_0;
 						else if (SC_STATEMACHINEGAME_MatrixComparator_InLow== 1'b0) STATE_Signal = STATE_LOSELIFE_0;
 						else if (SC_STATEMACHINEGAME_LastRegister_InBUS == 2'b00) STATE_Signal = STATE_NEXTLEVEL_0;
 						else if (SC_STATEMACHINEGAME_LastRegister_InBUS == 2'b10) STATE_Signal = STATE_HOUSE_0;

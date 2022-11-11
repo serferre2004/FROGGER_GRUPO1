@@ -23,7 +23,7 @@ module CC_LastRegisterCOMPARATOR #(parameter LastRegisterCOMPARATOR_DATAWIDTH=8)
 	CC_LastRegisterCOMPARATOR_win_OutBUS,
 //////////// INPUTS //////////
 	CC_LastRegisterCOMPARATOR_dataOR_InBUS,
-	CC_LastRegisterCOMPARATOR_dataLastRegister_InBUS
+	//CC_LastRegisterCOMPARATOR_dataLastRegister_InBUS Esto es un parámetro
 );
 //=======================================================
 //  PARAMETER declarations
