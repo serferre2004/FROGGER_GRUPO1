@@ -1,0 +1,1038 @@
+# Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# do BB_SYSTEM_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_CoinRegBACKGTYPE.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:05 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_CoinRegBACKGTYPE.v 
+# -- Compiling module SC_CoinRegBACKGTYPE
+# 
+# Top level modules:
+# 	SC_CoinRegBACKGTYPE
+# End time: 16:15:05 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_COINCOMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:05 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_COINCOMPARATOR.v 
+# -- Compiling module CC_COINCOMPARATOR
+# 
+# Top level modules:
+# 	CC_COINCOMPARATOR
+# End time: 16:15:06 on Nov 19,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upTRANSITIONCOUNTER.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:06 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upTRANSITIONCOUNTER.v 
+# -- Compiling module SC_upTRANSITIONCOUNTER
+# 
+# Top level modules:
+# 	SC_upTRANSITIONCOUNTER
+# End time: 16:15:06 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upLIFECOUNTER.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:06 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upLIFECOUNTER.v 
+# -- Compiling module SC_upLIFECOUNTER
+# 
+# Top level modules:
+# 	SC_upLIFECOUNTER
+# End time: 16:15:06 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEGAME.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:06 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEGAME.v 
+# -- Compiling module SC_STATEMACHINEGAME
+# 
+# Top level modules:
+# 	SC_STATEMACHINEGAME
+# End time: 16:15:06 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_LastRegBACKGTYPE.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:06 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_LastRegBACKGTYPE.v 
+# -- Compiling module SC_LastRegBACKGTYPE
+# 
+# Top level modules:
+# 	SC_LastRegBACKGTYPE
+# End time: 16:15:06 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_WINCOMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:06 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_WINCOMPARATOR.v 
+# -- Compiling module CC_WINCOMPARATOR
+# 
+# Top level modules:
+# 	CC_WINCOMPARATOR
+# End time: 16:15:06 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_MATRIXCOMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:06 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_MATRIXCOMPARATOR.v 
+# -- Compiling module CC_MATRIXCOMPARATOR
+# 
+# Top level modules:
+# 	CC_MATRIXCOMPARATOR
+# End time: 16:15:06 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_LIFE_COMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:06 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_LIFE_COMPARATOR.v 
+# -- Compiling module CC_LIFE_COMPARATOR
+# 
+# Top level modules:
+# 	CC_LIFE_COMPARATOR
+# End time: 16:15:06 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_LastRegisterCOMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:06 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_LastRegisterCOMPARATOR.v 
+# -- Compiling module CC_LastRegisterCOMPARATOR
+# 
+# Top level modules:
+# 	CC_LastRegisterCOMPARATOR
+# End time: 16:15:07 on Nov 19,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_FirstRegisterCOMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:07 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_FirstRegisterCOMPARATOR.v 
+# -- Compiling module CC_FirstRegisterCOMPARATOR
+# 
+# Top level modules:
+# 	CC_FirstRegisterCOMPARATOR
+# End time: 16:15:07 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEBACKG.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:07 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEBACKG.v 
+# -- Compiling module SC_STATEMACHINEBACKG
+# 
+# Top level modules:
+# 	SC_STATEMACHINEBACKG
+# End time: 16:15:07 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegBACKGTYPE.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:07 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegBACKGTYPE.v 
+# -- Compiling module SC_RegBACKGTYPE
+# 
+# Top level modules:
+# 	SC_RegBACKGTYPE
+# End time: 16:15:07 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEPOINT.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:07 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEPOINT.v 
+# -- Compiling module SC_STATEMACHINEPOINT
+# 
+# Top level modules:
+# 	SC_STATEMACHINEPOINT
+# End time: 16:15:07 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegPOINTTYPE.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:07 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegPOINTTYPE.v 
+# -- Compiling module SC_RegPOINTTYPE
+# 
+# Top level modules:
+# 	SC_RegPOINTTYPE
+# End time: 16:15:07 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upCOUNTER.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:07 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upCOUNTER.v 
+# -- Compiling module SC_upCOUNTER
+# 
+# Top level modules:
+# 	SC_upCOUNTER
+# End time: 16:15:07 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SEVENSEG1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:07 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SEVENSEG1.v 
+# -- Compiling module CC_SEVENSEG1
+# 
+# Top level modules:
+# 	CC_SEVENSEG1
+# End time: 16:15:07 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_BIN2BCD1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:07 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_BIN2BCD1.v 
+# -- Compiling module CC_BIN2BCD1
+# 
+# Top level modules:
+# 	CC_BIN2BCD1
+# End time: 16:15:07 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upSPEEDCOUNTER.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:08 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upSPEEDCOUNTER.v 
+# -- Compiling module SC_upSPEEDCOUNTER
+# 
+# Top level modules:
+# 	SC_upSPEEDCOUNTER
+# End time: 16:15:08 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SPEEDCOMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:08 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SPEEDCOMPARATOR.v 
+# -- Compiling module CC_SPEEDCOMPARATOR
+# 
+# Top level modules:
+# 	CC_SPEEDCOMPARATOR
+# End time: 16:15:08 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/shift_reg_start_done.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:08 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/shift_reg_start_done.v 
+# -- Compiling module shift_reg_start_done
+# 
+# Top level modules:
+# 	shift_reg_start_done
+# End time: 16:15:08 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/max7219_ctrl.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:08 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/max7219_ctrl.v 
+# -- Compiling module matrix_ctrl
+# 
+# Top level modules:
+# 	matrix_ctrl
+# End time: 16:15:08 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_DEBOUNCE1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:08 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_DEBOUNCE1.v 
+# -- Compiling module SC_DEBOUNCE1
+# 
+# Top level modules:
+# 	SC_DEBOUNCE1
+# End time: 16:15:08 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/BB_SYSTEM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:08 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/BB_SYSTEM.v 
+# -- Compiling module BB_SYSTEM
+# 
+# Top level modules:
+# 	BB_SYSTEM
+# End time: 16:15:08 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upBLINKCOUNTER.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:08 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upBLINKCOUNTER.v 
+# -- Compiling module SC_upBLINKCOUNTER
+# 
+# Top level modules:
+# 	SC_upBLINKCOUNTER
+# End time: 16:15:08 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegCOINTYPE.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:08 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegCOINTYPE.v 
+# -- Compiling module SC_RegCOINTYPE
+# 
+# Top level modules:
+# 	SC_RegCOINTYPE
+# End time: 16:15:08 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SHIFT_COMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:09 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SHIFT_COMPARATOR.v 
+# -- Compiling module CC_SHIFTCOMPARATOR
+# 
+# Top level modules:
+# 	CC_SHIFTCOMPARATOR
+# End time: 16:15:09 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/simulation/modelsim {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/simulation/modelsim/TB_SYSTEM.vt}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:09 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/simulation/modelsim" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/simulation/modelsim/TB_SYSTEM.vt 
+# -- Compiling module TB_SYSTEM
+# 
+# Top level modules:
+# 	TB_SYSTEM
+# End time: 16:15:09 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  TB_SYSTEM
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" TB_SYSTEM 
+# Start time: 16:15:09 on Nov 19,2022
+# Loading work.TB_SYSTEM
+# Loading work.BB_SYSTEM
+# Loading work.SC_DEBOUNCE1
+# Loading work.SC_RegPOINTTYPE
+# Loading work.SC_STATEMACHINEPOINT
+# Loading work.SC_STATEMACHINEBACKG
+# Loading work.SC_STATEMACHINEGAME
+# Loading work.SC_RegBACKGTYPE
+# Loading work.SC_CoinRegBACKGTYPE
+# Loading work.SC_LastRegBACKGTYPE
+# Loading work.SC_upCOUNTER
+# Loading work.SC_upSPEEDCOUNTER
+# Loading work.SC_upBLINKCOUNTER
+# Loading work.SC_RegCOINTYPE
+# Loading work.SC_upTRANSITIONCOUNTER
+# Loading work.SC_upLIFECOUNTER
+# Loading work.CC_SPEEDCOMPARATOR
+# Loading work.CC_SHIFTCOMPARATOR
+# Loading work.CC_WINCOMPARATOR
+# Loading work.CC_LIFE_COMPARATOR
+# Loading work.CC_FirstRegisterCOMPARATOR
+# Loading work.CC_LastRegisterCOMPARATOR
+# Loading work.CC_MATRIXCOMPARATOR
+# Loading work.CC_COINCOMPARATOR
+# Loading work.matrix_ctrl
+# Loading work.shift_reg_start_done
+# Loading work.CC_BIN2BCD1
+# Loading work.CC_SEVENSEG1
+# ** Warning: (vsim-3015) C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/simulation/modelsim/TB_SYSTEM.vt(60): [PCDPC] - Port size (12) does not match connection size (1) for port 'BB_SYSTEM_display_OutBUS'. The port definition is at: C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/BB_SYSTEM.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0 File: C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/BB_SYSTEM.v
+# ** Warning: (vsim-3015) C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/BB_SYSTEM.v(951): [PCDPC] - Port size (8) does not match connection size (3) for port 'CC_BIN2BCD_bin_InBUS'. The port definition is at: C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_BIN2BCD1.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/CC_BIN2BCD1_u0 File: C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_BIN2BCD1.v
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: FELIX  Hostname: LAPTOP-PJH55IHJ  ProcessID: 36696
+#           Attempting to use alternate WLF file "./wlftcr5jcz".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftcr5jcz
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Running testbench
+do TB_SYSTEM.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_CoinRegBACKGTYPE.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:12 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_CoinRegBACKGTYPE.v 
+# -- Compiling module SC_CoinRegBACKGTYPE
+# 
+# Top level modules:
+# 	SC_CoinRegBACKGTYPE
+# End time: 16:23:12 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_COINCOMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:12 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_COINCOMPARATOR.v 
+# -- Compiling module CC_COINCOMPARATOR
+# 
+# Top level modules:
+# 	CC_COINCOMPARATOR
+# End time: 16:23:12 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upTRANSITIONCOUNTER.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:12 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upTRANSITIONCOUNTER.v 
+# -- Compiling module SC_upTRANSITIONCOUNTER
+# 
+# Top level modules:
+# 	SC_upTRANSITIONCOUNTER
+# End time: 16:23:12 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upLIFECOUNTER.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:12 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upLIFECOUNTER.v 
+# -- Compiling module SC_upLIFECOUNTER
+# 
+# Top level modules:
+# 	SC_upLIFECOUNTER
+# End time: 16:23:12 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEGAME.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:12 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEGAME.v 
+# -- Compiling module SC_STATEMACHINEGAME
+# 
+# Top level modules:
+# 	SC_STATEMACHINEGAME
+# End time: 16:23:12 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_LastRegBACKGTYPE.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:12 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_LastRegBACKGTYPE.v 
+# -- Compiling module SC_LastRegBACKGTYPE
+# 
+# Top level modules:
+# 	SC_LastRegBACKGTYPE
+# End time: 16:23:12 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_WINCOMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:12 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_WINCOMPARATOR.v 
+# -- Compiling module CC_WINCOMPARATOR
+# 
+# Top level modules:
+# 	CC_WINCOMPARATOR
+# End time: 16:23:12 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_MATRIXCOMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:12 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_MATRIXCOMPARATOR.v 
+# -- Compiling module CC_MATRIXCOMPARATOR
+# 
+# Top level modules:
+# 	CC_MATRIXCOMPARATOR
+# End time: 16:23:13 on Nov 19,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_LIFE_COMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:13 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_LIFE_COMPARATOR.v 
+# -- Compiling module CC_LIFE_COMPARATOR
+# 
+# Top level modules:
+# 	CC_LIFE_COMPARATOR
+# End time: 16:23:13 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_LastRegisterCOMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:13 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_LastRegisterCOMPARATOR.v 
+# -- Compiling module CC_LastRegisterCOMPARATOR
+# 
+# Top level modules:
+# 	CC_LastRegisterCOMPARATOR
+# End time: 16:23:13 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_FirstRegisterCOMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:13 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_FirstRegisterCOMPARATOR.v 
+# -- Compiling module CC_FirstRegisterCOMPARATOR
+# 
+# Top level modules:
+# 	CC_FirstRegisterCOMPARATOR
+# End time: 16:23:13 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEBACKG.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:13 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEBACKG.v 
+# -- Compiling module SC_STATEMACHINEBACKG
+# 
+# Top level modules:
+# 	SC_STATEMACHINEBACKG
+# End time: 16:23:13 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegBACKGTYPE.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:13 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegBACKGTYPE.v 
+# -- Compiling module SC_RegBACKGTYPE
+# 
+# Top level modules:
+# 	SC_RegBACKGTYPE
+# End time: 16:23:13 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEPOINT.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:13 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEPOINT.v 
+# -- Compiling module SC_STATEMACHINEPOINT
+# 
+# Top level modules:
+# 	SC_STATEMACHINEPOINT
+# End time: 16:23:13 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegPOINTTYPE.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:13 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegPOINTTYPE.v 
+# -- Compiling module SC_RegPOINTTYPE
+# 
+# Top level modules:
+# 	SC_RegPOINTTYPE
+# End time: 16:23:14 on Nov 19,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upCOUNTER.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:14 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upCOUNTER.v 
+# -- Compiling module SC_upCOUNTER
+# 
+# Top level modules:
+# 	SC_upCOUNTER
+# End time: 16:23:14 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SEVENSEG1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:14 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SEVENSEG1.v 
+# -- Compiling module CC_SEVENSEG1
+# 
+# Top level modules:
+# 	CC_SEVENSEG1
+# End time: 16:23:14 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_BIN2BCD1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:14 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_BIN2BCD1.v 
+# -- Compiling module CC_BIN2BCD1
+# 
+# Top level modules:
+# 	CC_BIN2BCD1
+# End time: 16:23:14 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upSPEEDCOUNTER.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:14 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upSPEEDCOUNTER.v 
+# -- Compiling module SC_upSPEEDCOUNTER
+# 
+# Top level modules:
+# 	SC_upSPEEDCOUNTER
+# End time: 16:23:14 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SPEEDCOMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:14 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SPEEDCOMPARATOR.v 
+# -- Compiling module CC_SPEEDCOMPARATOR
+# 
+# Top level modules:
+# 	CC_SPEEDCOMPARATOR
+# End time: 16:23:14 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/shift_reg_start_done.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:14 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/shift_reg_start_done.v 
+# -- Compiling module shift_reg_start_done
+# 
+# Top level modules:
+# 	shift_reg_start_done
+# End time: 16:23:14 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/max7219_ctrl.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:14 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/max7219_ctrl.v 
+# -- Compiling module matrix_ctrl
+# 
+# Top level modules:
+# 	matrix_ctrl
+# End time: 16:23:15 on Nov 19,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_DEBOUNCE1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:15 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_DEBOUNCE1.v 
+# -- Compiling module SC_DEBOUNCE1
+# 
+# Top level modules:
+# 	SC_DEBOUNCE1
+# End time: 16:23:15 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/BB_SYSTEM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:15 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/BB_SYSTEM.v 
+# -- Compiling module BB_SYSTEM
+# 
+# Top level modules:
+# 	BB_SYSTEM
+# End time: 16:23:15 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upBLINKCOUNTER.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:15 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upBLINKCOUNTER.v 
+# -- Compiling module SC_upBLINKCOUNTER
+# 
+# Top level modules:
+# 	SC_upBLINKCOUNTER
+# End time: 16:23:15 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegCOINTYPE.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:15 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegCOINTYPE.v 
+# -- Compiling module SC_RegCOINTYPE
+# 
+# Top level modules:
+# 	SC_RegCOINTYPE
+# End time: 16:23:15 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SHIFT_COMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:15 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SHIFT_COMPARATOR.v 
+# -- Compiling module CC_SHIFTCOMPARATOR
+# 
+# Top level modules:
+# 	CC_SHIFTCOMPARATOR
+# End time: 16:23:15 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/simulation/modelsim {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/simulation/modelsim/TB_SYSTEM.vt}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:15 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/simulation/modelsim" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/simulation/modelsim/TB_SYSTEM.vt 
+# -- Compiling module TB_SYSTEM
+# 
+# Top level modules:
+# 	TB_SYSTEM
+# End time: 16:23:15 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  TB_SYSTEM
+# End time: 16:23:18 on Nov 19,2022, Elapsed time: 0:08:09
+# Errors: 0, Warnings: 4
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" TB_SYSTEM 
+# Start time: 16:23:18 on Nov 19,2022
+# Loading work.TB_SYSTEM
+# Loading work.BB_SYSTEM
+# Loading work.SC_DEBOUNCE1
+# Loading work.SC_RegPOINTTYPE
+# Loading work.SC_STATEMACHINEPOINT
+# Loading work.SC_STATEMACHINEBACKG
+# Loading work.SC_STATEMACHINEGAME
+# Loading work.SC_RegBACKGTYPE
+# Loading work.SC_CoinRegBACKGTYPE
+# Loading work.SC_LastRegBACKGTYPE
+# Loading work.SC_upCOUNTER
+# Loading work.SC_upSPEEDCOUNTER
+# Loading work.SC_upBLINKCOUNTER
+# Loading work.SC_RegCOINTYPE
+# Loading work.SC_upTRANSITIONCOUNTER
+# Loading work.SC_upLIFECOUNTER
+# Loading work.CC_SPEEDCOMPARATOR
+# Loading work.CC_SHIFTCOMPARATOR
+# Loading work.CC_WINCOMPARATOR
+# Loading work.CC_LIFE_COMPARATOR
+# Loading work.CC_FirstRegisterCOMPARATOR
+# Loading work.CC_LastRegisterCOMPARATOR
+# Loading work.CC_MATRIXCOMPARATOR
+# Loading work.CC_COINCOMPARATOR
+# Loading work.matrix_ctrl
+# Loading work.shift_reg_start_done
+# Loading work.CC_BIN2BCD1
+# Loading work.CC_SEVENSEG1
+# ** Warning: (vsim-3015) C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/simulation/modelsim/TB_SYSTEM.vt(60): [PCDPC] - Port size (12) does not match connection size (1) for port 'BB_SYSTEM_display_OutBUS'. The port definition is at: C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/BB_SYSTEM.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0 File: C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/BB_SYSTEM.v
+# ** Warning: (vsim-3015) C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/BB_SYSTEM.v(951): [PCDPC] - Port size (8) does not match connection size (3) for port 'CC_BIN2BCD_bin_InBUS'. The port definition is at: C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_BIN2BCD1.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/CC_BIN2BCD1_u0 File: C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_BIN2BCD1.v
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: FELIX  Hostname: LAPTOP-PJH55IHJ  ProcessID: 36696
+#           Attempting to use alternate WLF file "./wlftxcs5ai".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftxcs5ai
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Running testbench
+# ** Warning: (vsim-3015) C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/simulation/modelsim/TB_SYSTEM.vt(60): [PCDPC] - Port size (12) does not match connection size (1) for port 'BB_SYSTEM_display_OutBUS'. The port definition is at: C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/BB_SYSTEM.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0 File: C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/BB_SYSTEM.v
+# ** Warning: (vsim-3015) C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/BB_SYSTEM.v(951): [PCDPC] - Port size (8) does not match connection size (3) for port 'CC_BIN2BCD_bin_InBUS'. The port definition is at: C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_BIN2BCD1.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/CC_BIN2BCD1_u0 File: C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_BIN2BCD1.v
+# Running testbench
+do TB_SYSTEM.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_CoinRegBACKGTYPE.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:55 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_CoinRegBACKGTYPE.v 
+# -- Compiling module SC_CoinRegBACKGTYPE
+# 
+# Top level modules:
+# 	SC_CoinRegBACKGTYPE
+# End time: 16:32:55 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_COINCOMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:55 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_COINCOMPARATOR.v 
+# -- Compiling module CC_COINCOMPARATOR
+# 
+# Top level modules:
+# 	CC_COINCOMPARATOR
+# End time: 16:32:55 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upTRANSITIONCOUNTER.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:55 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upTRANSITIONCOUNTER.v 
+# -- Compiling module SC_upTRANSITIONCOUNTER
+# 
+# Top level modules:
+# 	SC_upTRANSITIONCOUNTER
+# End time: 16:32:55 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upLIFECOUNTER.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:55 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upLIFECOUNTER.v 
+# -- Compiling module SC_upLIFECOUNTER
+# 
+# Top level modules:
+# 	SC_upLIFECOUNTER
+# End time: 16:32:55 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEGAME.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:55 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEGAME.v 
+# -- Compiling module SC_STATEMACHINEGAME
+# 
+# Top level modules:
+# 	SC_STATEMACHINEGAME
+# End time: 16:32:55 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_LastRegBACKGTYPE.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:55 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_LastRegBACKGTYPE.v 
+# -- Compiling module SC_LastRegBACKGTYPE
+# 
+# Top level modules:
+# 	SC_LastRegBACKGTYPE
+# End time: 16:32:55 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_WINCOMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:55 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_WINCOMPARATOR.v 
+# -- Compiling module CC_WINCOMPARATOR
+# 
+# Top level modules:
+# 	CC_WINCOMPARATOR
+# End time: 16:32:56 on Nov 19,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_MATRIXCOMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:56 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_MATRIXCOMPARATOR.v 
+# -- Compiling module CC_MATRIXCOMPARATOR
+# 
+# Top level modules:
+# 	CC_MATRIXCOMPARATOR
+# End time: 16:32:56 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_LIFE_COMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:56 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_LIFE_COMPARATOR.v 
+# -- Compiling module CC_LIFE_COMPARATOR
+# 
+# Top level modules:
+# 	CC_LIFE_COMPARATOR
+# End time: 16:32:56 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_LastRegisterCOMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:56 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_LastRegisterCOMPARATOR.v 
+# -- Compiling module CC_LastRegisterCOMPARATOR
+# 
+# Top level modules:
+# 	CC_LastRegisterCOMPARATOR
+# End time: 16:32:56 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_FirstRegisterCOMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:56 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_FirstRegisterCOMPARATOR.v 
+# -- Compiling module CC_FirstRegisterCOMPARATOR
+# 
+# Top level modules:
+# 	CC_FirstRegisterCOMPARATOR
+# End time: 16:32:56 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEBACKG.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:56 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEBACKG.v 
+# -- Compiling module SC_STATEMACHINEBACKG
+# 
+# Top level modules:
+# 	SC_STATEMACHINEBACKG
+# End time: 16:32:56 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegBACKGTYPE.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:57 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegBACKGTYPE.v 
+# -- Compiling module SC_RegBACKGTYPE
+# 
+# Top level modules:
+# 	SC_RegBACKGTYPE
+# End time: 16:32:57 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEPOINT.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:57 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEPOINT.v 
+# -- Compiling module SC_STATEMACHINEPOINT
+# 
+# Top level modules:
+# 	SC_STATEMACHINEPOINT
+# End time: 16:32:57 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegPOINTTYPE.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:57 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegPOINTTYPE.v 
+# -- Compiling module SC_RegPOINTTYPE
+# 
+# Top level modules:
+# 	SC_RegPOINTTYPE
+# End time: 16:32:57 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upCOUNTER.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:57 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upCOUNTER.v 
+# -- Compiling module SC_upCOUNTER
+# 
+# Top level modules:
+# 	SC_upCOUNTER
+# End time: 16:32:57 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SEVENSEG1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:57 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SEVENSEG1.v 
+# -- Compiling module CC_SEVENSEG1
+# 
+# Top level modules:
+# 	CC_SEVENSEG1
+# End time: 16:32:57 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_BIN2BCD1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:57 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_BIN2BCD1.v 
+# -- Compiling module CC_BIN2BCD1
+# 
+# Top level modules:
+# 	CC_BIN2BCD1
+# End time: 16:32:57 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upSPEEDCOUNTER.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:57 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upSPEEDCOUNTER.v 
+# -- Compiling module SC_upSPEEDCOUNTER
+# 
+# Top level modules:
+# 	SC_upSPEEDCOUNTER
+# End time: 16:32:57 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SPEEDCOMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:57 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SPEEDCOMPARATOR.v 
+# -- Compiling module CC_SPEEDCOMPARATOR
+# 
+# Top level modules:
+# 	CC_SPEEDCOMPARATOR
+# End time: 16:32:58 on Nov 19,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/shift_reg_start_done.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:58 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/shift_reg_start_done.v 
+# -- Compiling module shift_reg_start_done
+# 
+# Top level modules:
+# 	shift_reg_start_done
+# End time: 16:32:58 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/max7219_ctrl.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:58 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/max7219_ctrl.v 
+# -- Compiling module matrix_ctrl
+# 
+# Top level modules:
+# 	matrix_ctrl
+# End time: 16:32:58 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_DEBOUNCE1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:58 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_DEBOUNCE1.v 
+# -- Compiling module SC_DEBOUNCE1
+# 
+# Top level modules:
+# 	SC_DEBOUNCE1
+# End time: 16:32:58 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/BB_SYSTEM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:58 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/BB_SYSTEM.v 
+# -- Compiling module BB_SYSTEM
+# 
+# Top level modules:
+# 	BB_SYSTEM
+# End time: 16:32:58 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upBLINKCOUNTER.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:58 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upBLINKCOUNTER.v 
+# -- Compiling module SC_upBLINKCOUNTER
+# 
+# Top level modules:
+# 	SC_upBLINKCOUNTER
+# End time: 16:32:58 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegCOINTYPE.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:58 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegCOINTYPE.v 
+# -- Compiling module SC_RegCOINTYPE
+# 
+# Top level modules:
+# 	SC_RegCOINTYPE
+# End time: 16:32:58 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/rtl {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SHIFT_COMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:58 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SHIFT_COMPARATOR.v 
+# -- Compiling module CC_SHIFTCOMPARATOR
+# 
+# Top level modules:
+# 	CC_SHIFTCOMPARATOR
+# End time: 16:32:58 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/FELIX/Desktop/Universidad/Segundo\ semestre/Sistemas\ Electronicos\ Digitales/Proyecto\ 1/Final\ con\ Monedas/Final\ con\ Monedas/simulation/modelsim {C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/simulation/modelsim/TB_SYSTEM.vt}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:58 on Nov 19,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/simulation/modelsim" C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/simulation/modelsim/TB_SYSTEM.vt 
+# -- Compiling module TB_SYSTEM
+# 
+# Top level modules:
+# 	TB_SYSTEM
+# End time: 16:32:58 on Nov 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  TB_SYSTEM
+# End time: 16:33:01 on Nov 19,2022, Elapsed time: 0:09:43
+# Errors: 0, Warnings: 6
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" TB_SYSTEM 
+# Start time: 16:33:01 on Nov 19,2022
+# Loading work.TB_SYSTEM
+# Loading work.BB_SYSTEM
+# Loading work.SC_DEBOUNCE1
+# Loading work.SC_RegPOINTTYPE
+# Loading work.SC_STATEMACHINEPOINT
+# Loading work.SC_STATEMACHINEBACKG
+# Loading work.SC_STATEMACHINEGAME
+# Loading work.SC_RegBACKGTYPE
+# Loading work.SC_CoinRegBACKGTYPE
+# Loading work.SC_LastRegBACKGTYPE
+# Loading work.SC_upCOUNTER
+# Loading work.SC_upSPEEDCOUNTER
+# Loading work.SC_upBLINKCOUNTER
+# Loading work.SC_RegCOINTYPE
+# Loading work.SC_upTRANSITIONCOUNTER
+# Loading work.SC_upLIFECOUNTER
+# Loading work.CC_SPEEDCOMPARATOR
+# Loading work.CC_SHIFTCOMPARATOR
+# Loading work.CC_WINCOMPARATOR
+# Loading work.CC_LIFE_COMPARATOR
+# Loading work.CC_FirstRegisterCOMPARATOR
+# Loading work.CC_LastRegisterCOMPARATOR
+# Loading work.CC_MATRIXCOMPARATOR
+# Loading work.CC_COINCOMPARATOR
+# Loading work.matrix_ctrl
+# Loading work.shift_reg_start_done
+# Loading work.CC_BIN2BCD1
+# Loading work.CC_SEVENSEG1
+# ** Warning: (vsim-3015) C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/simulation/modelsim/TB_SYSTEM.vt(60): [PCDPC] - Port size (12) does not match connection size (1) for port 'BB_SYSTEM_display_OutBUS'. The port definition is at: C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/BB_SYSTEM.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0 File: C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/BB_SYSTEM.v
+# ** Warning: (vsim-3015) C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/BB_SYSTEM.v(951): [PCDPC] - Port size (8) does not match connection size (3) for port 'CC_BIN2BCD_bin_InBUS'. The port definition is at: C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_BIN2BCD1.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/CC_BIN2BCD1_u0 File: C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_BIN2BCD1.v
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: FELIX  Hostname: LAPTOP-PJH55IHJ  ProcessID: 36696
+#           Attempting to use alternate WLF file "./wlftd4cr4v".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftd4cr4v
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Running testbench
+# ** Warning: (vsim-3015) C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/simulation/modelsim/TB_SYSTEM.vt(60): [PCDPC] - Port size (12) does not match connection size (1) for port 'BB_SYSTEM_display_OutBUS'. The port definition is at: C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/BB_SYSTEM.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0 File: C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/BB_SYSTEM.v
+# ** Warning: (vsim-3015) C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/BB_SYSTEM.v(951): [PCDPC] - Port size (8) does not match connection size (3) for port 'CC_BIN2BCD_bin_InBUS'. The port definition is at: C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_BIN2BCD1.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/CC_BIN2BCD1_u0 File: C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_BIN2BCD1.v
+# Running testbench
+# End time: 16:51:24 on Nov 19,2022, Elapsed time: 0:18:23
+# Errors: 0, Warnings: 6

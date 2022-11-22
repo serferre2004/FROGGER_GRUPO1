@@ -1,0 +1,652 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/simulation/modelsim
+vBB_SYSTEM
+Z1 !s110 1668893578
+!i10b 1
+!s100 nT71W@7ido0LVlefA4FU60
+IBYz?>H1`6mJoQad0f>35m2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1668891286
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/BB_SYSTEM.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/BB_SYSTEM.v
+Z3 L0 21
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1668893578.000000
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/BB_SYSTEM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/BB_SYSTEM.v|
+!i113 1
+Z6 o-vlog01compat -work work
+!s92 -vlog01compat -work work {+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas}
+Z7 tCvgOpt 0
+n@b@b_@s@y@s@t@e@m
+vCC_BIN2BCD1
+Z8 !s110 1668893577
+!i10b 1
+!s100 QO[[GfEG:_IIZUgJ1o]@b1
+IYUH@Ln^7D`OF7c87PGI6a2
+R2
+R0
+Z9 w1668481234
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_BIN2BCD1.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_BIN2BCD1.v
+Z10 L0 19
+R4
+r1
+!s85 0
+31
+Z11 !s108 1668893577.000000
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_BIN2BCD1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_BIN2BCD1.v|
+!i113 1
+R6
+Z12 !s92 -vlog01compat -work work {+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl}
+R7
+n@c@c_@b@i@n2@b@c@d1
+vCC_COINCOMPARATOR
+Z13 !s110 1668893575
+!i10b 1
+!s100 B=SH0bkUYT=aKP^?LMIPi1
+IkXg<Zh^Jb=lSe4SH;<f=j1
+R2
+R0
+w1668706356
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_COINCOMPARATOR.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_COINCOMPARATOR.v
+L0 6
+R4
+r1
+!s85 0
+31
+Z14 !s108 1668893575.000000
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_COINCOMPARATOR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_COINCOMPARATOR.v|
+!i113 1
+R6
+R12
+R7
+n@c@c_@c@o@i@n@c@o@m@p@a@r@a@t@o@r
+vCC_FirstRegisterCOMPARATOR
+Z15 !s110 1668893576
+!i10b 1
+!s100 SU_1d9I2ROCS;RW22>PQJ3
+I:iBIfaU=78KVj_XZU:5CL0
+R2
+R0
+R9
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_FirstRegisterCOMPARATOR.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_FirstRegisterCOMPARATOR.v
+R3
+R4
+r1
+!s85 0
+31
+Z16 !s108 1668893576.000000
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_FirstRegisterCOMPARATOR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_FirstRegisterCOMPARATOR.v|
+!i113 1
+R6
+R12
+R7
+n@c@c_@first@register@c@o@m@p@a@r@a@t@o@r
+vCC_LastRegisterCOMPARATOR
+R15
+!i10b 1
+!s100 b1eEc^@ERZ4hD4>F6UQT63
+I2<`P4U;:QHZdR=7MH19iU3
+R2
+R0
+Z17 w1668481236
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_LastRegisterCOMPARATOR.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_LastRegisterCOMPARATOR.v
+R3
+R4
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_LastRegisterCOMPARATOR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_LastRegisterCOMPARATOR.v|
+!i113 1
+R6
+R12
+R7
+n@c@c_@last@register@c@o@m@p@a@r@a@t@o@r
+vCC_LIFE_COMPARATOR
+R15
+!i10b 1
+!s100 Vi[MWikWkgZ@ZBXLER5=i1
+IVcd]N_U^7fT>XDW@[b]7O0
+R2
+R0
+w1668795024
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_LIFE_COMPARATOR.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_LIFE_COMPARATOR.v
+R3
+R4
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_LIFE_COMPARATOR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_LIFE_COMPARATOR.v|
+!i113 1
+R6
+R12
+R7
+n@c@c_@l@i@f@e_@c@o@m@p@a@r@a@t@o@r
+vCC_MATRIXCOMPARATOR
+R15
+!i10b 1
+!s100 b[OJVRU3d[g2?H`dh<7W@0
+I57_o5Hlg8]n]>5SD>oRPb1
+R2
+R0
+w1668780090
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_MATRIXCOMPARATOR.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_MATRIXCOMPARATOR.v
+L0 6
+R4
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_MATRIXCOMPARATOR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_MATRIXCOMPARATOR.v|
+!i113 1
+R6
+R12
+R7
+n@c@c_@m@a@t@r@i@x@c@o@m@p@a@r@a@t@o@r
+vCC_SEVENSEG1
+R8
+!i10b 1
+!s100 U;OI0BK_N[TU?J^bM9E360
+I51AEdI40D5M4j:=>kPhj>0
+R2
+R0
+R17
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SEVENSEG1.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SEVENSEG1.v
+L0 24
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SEVENSEG1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SEVENSEG1.v|
+!i113 1
+R6
+R12
+R7
+n@c@c_@s@e@v@e@n@s@e@g1
+vCC_SHIFTCOMPARATOR
+R1
+!i10b 1
+!s100 7ZoMV3ge34OmKHk62]9K]2
+I^NbRk5Emj4]PRVRT]gh=:3
+R2
+R0
+w1668873815
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SHIFT_COMPARATOR.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SHIFT_COMPARATOR.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SHIFT_COMPARATOR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SHIFT_COMPARATOR.v|
+!i113 1
+R6
+R12
+R7
+n@c@c_@s@h@i@f@t@c@o@m@p@a@r@a@t@o@r
+vCC_SPEEDCOMPARATOR
+R1
+!i10b 1
+!s100 <6CBSTWX3e]M<g1[;j>>m0
+I9Hn9U5YzOHhI4B<1P?g2K2
+R2
+R0
+w1668536728
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SPEEDCOMPARATOR.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SPEEDCOMPARATOR.v
+R3
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SPEEDCOMPARATOR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_SPEEDCOMPARATOR.v|
+!i113 1
+R6
+R12
+R7
+n@c@c_@s@p@e@e@d@c@o@m@p@a@r@a@t@o@r
+vCC_WINCOMPARATOR
+R15
+!i10b 1
+!s100 ^G>I?2k2ll1UaOZn0Si]B3
+I5DA?NhNmFFMMzLmh4XXaB3
+R2
+R0
+R17
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_WINCOMPARATOR.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_WINCOMPARATOR.v
+R3
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_WINCOMPARATOR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/CC_WINCOMPARATOR.v|
+!i113 1
+R6
+R12
+R7
+n@c@c_@w@i@n@c@o@m@p@a@r@a@t@o@r
+vmatrix_ctrl
+R1
+!i10b 1
+!s100 e8fJ::8FZhBf=Yo62HC<D0
+IjJ8J5f2bI?mlBlY123Bel1
+R2
+R0
+R17
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/max7219_ctrl.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/max7219_ctrl.v
+L0 18
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/max7219_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/max7219_ctrl.v|
+!i113 1
+R6
+R12
+R7
+vSC_CoinRegBACKGTYPE
+R13
+!i10b 1
+!s100 onzkoP7KV]_J1zE<eLB3@3
+IBFIM_L?>YeC4gRlf[DGNe2
+R2
+R0
+w1668887981
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_CoinRegBACKGTYPE.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_CoinRegBACKGTYPE.v
+R3
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_CoinRegBACKGTYPE.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_CoinRegBACKGTYPE.v|
+!i113 1
+R6
+R12
+R7
+n@s@c_@coin@reg@b@a@c@k@g@t@y@p@e
+vSC_DEBOUNCE1
+R1
+!i10b 1
+!s100 R1A>6;z02mNBGFV[E4kge0
+ICQf5>CJ[8fcDa5??>V=IP2
+R2
+R0
+R17
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_DEBOUNCE1.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_DEBOUNCE1.v
+L0 44
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_DEBOUNCE1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_DEBOUNCE1.v|
+!i113 1
+R6
+R12
+R7
+n@s@c_@d@e@b@o@u@n@c@e1
+vSC_LastRegBACKGTYPE
+R13
+!i10b 1
+!s100 ?kG6FV9U]AR<5mOLH]ng00
+IN7<mT[[Qm6W;2GmU_nLb<0
+R2
+R0
+w1668535656
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_LastRegBACKGTYPE.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_LastRegBACKGTYPE.v
+R3
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_LastRegBACKGTYPE.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_LastRegBACKGTYPE.v|
+!i113 1
+R6
+R12
+R7
+n@s@c_@last@reg@b@a@c@k@g@t@y@p@e
+vSC_RegBACKGTYPE
+R8
+!i10b 1
+!s100 N1H2V5k30^Ze[YdE4P`k93
+IGgN7RQm5[MJWEKUE0dWo20
+R2
+R0
+w1668535512
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegBACKGTYPE.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegBACKGTYPE.v
+R3
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegBACKGTYPE.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegBACKGTYPE.v|
+!i113 1
+R6
+R12
+R7
+n@s@c_@reg@b@a@c@k@g@t@y@p@e
+vSC_RegCOINTYPE
+R1
+!i10b 1
+!s100 kL`Jnnoma==U1]W19efFI3
+IERoMV[T[^QJk[E]`T[2Gl1
+R2
+R0
+w1668783042
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegCOINTYPE.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegCOINTYPE.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegCOINTYPE.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegCOINTYPE.v|
+!i113 1
+R6
+R12
+R7
+n@s@c_@reg@c@o@i@n@t@y@p@e
+vSC_RegPOINTTYPE
+R8
+!i10b 1
+!s100 ziIeh`6SV@<XFFQi;5G`=1
+I1^nEW_QH7[CJXZOhdcK0O0
+R2
+R0
+R17
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegPOINTTYPE.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegPOINTTYPE.v
+R3
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegPOINTTYPE.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_RegPOINTTYPE.v|
+!i113 1
+R6
+R12
+R7
+n@s@c_@reg@p@o@i@n@t@t@y@p@e
+vSC_STATEMACHINEBACKG
+R15
+!i10b 1
+!s100 Y>YJRcMg7B=zhB2oe1<S23
+IlW5Xb1BYkUO`3G0NF1aRf0
+R2
+R0
+w1668892446
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEBACKG.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEBACKG.v
+R3
+R4
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEBACKG.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEBACKG.v|
+!i113 1
+R6
+R12
+R7
+n@s@c_@s@t@a@t@e@m@a@c@h@i@n@e@b@a@c@k@g
+vSC_STATEMACHINEGAME
+R13
+!i10b 1
+!s100 aIf@0=UcUoUncjCjgHnG`2
+I=XFWcP[o>12zNZj6?zN6m3
+R2
+R0
+w1668804674
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEGAME.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEGAME.v
+R3
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEGAME.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEGAME.v|
+!i113 1
+R6
+R12
+R7
+n@s@c_@s@t@a@t@e@m@a@c@h@i@n@e@g@a@m@e
+vSC_STATEMACHINEPOINT
+R8
+!i10b 1
+!s100 CZCg>oce8ZULNJ]5XNa_R0
+IGGbO=D<6PNoLM7c6h<[Vd1
+R2
+R0
+R17
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEPOINT.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEPOINT.v
+R3
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEPOINT.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_STATEMACHINEPOINT.v|
+!i113 1
+R6
+R12
+R7
+n@s@c_@s@t@a@t@e@m@a@c@h@i@n@e@p@o@i@n@t
+vSC_upBLINKCOUNTER
+R1
+!i10b 1
+!s100 R2;<TfBcG[@EPIK1jkhQ:2
+IVU@:X7>K]jX[eKPfa<>K@1
+R2
+R0
+w1668785378
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upBLINKCOUNTER.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upBLINKCOUNTER.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upBLINKCOUNTER.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upBLINKCOUNTER.v|
+!i113 1
+R6
+R12
+R7
+n@s@c_up@b@l@i@n@k@c@o@u@n@t@e@r
+vSC_upCOUNTER
+R8
+!i10b 1
+!s100 PT49PD5be3bIA@;=]eGhk2
+IHf<k3]A5`PB_@zDTzMhi>1
+R2
+R0
+R17
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upCOUNTER.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upCOUNTER.v
+R3
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upCOUNTER.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upCOUNTER.v|
+!i113 1
+R6
+R12
+R7
+n@s@c_up@c@o@u@n@t@e@r
+vSC_upLIFECOUNTER
+R13
+!i10b 1
+!s100 OTijKD7VAL;OP:CVAG9QU0
+IHH<_nM3z;?Uo:mN9>3BoV3
+R2
+R0
+w1668795870
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upLIFECOUNTER.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upLIFECOUNTER.v
+R3
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upLIFECOUNTER.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upLIFECOUNTER.v|
+!i113 1
+R6
+R12
+R7
+n@s@c_up@l@i@f@e@c@o@u@n@t@e@r
+vSC_upSPEEDCOUNTER
+R8
+!i10b 1
+!s100 28F]K9fD=7;GAAEge:eD20
+INo`iK;fABlZ4OBK4l]`>B1
+R2
+R0
+R17
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upSPEEDCOUNTER.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upSPEEDCOUNTER.v
+R3
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upSPEEDCOUNTER.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upSPEEDCOUNTER.v|
+!i113 1
+R6
+R12
+R7
+n@s@c_up@s@p@e@e@d@c@o@u@n@t@e@r
+vSC_upTRANSITIONCOUNTER
+R13
+!i10b 1
+!s100 OLH`DG;02h9dX@BhK@Zjb3
+Ic=GQ`EG9DQzWjB83ZDk;S3
+R2
+R0
+R17
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upTRANSITIONCOUNTER.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upTRANSITIONCOUNTER.v
+L0 22
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upTRANSITIONCOUNTER.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/SC_upTRANSITIONCOUNTER.v|
+!i113 1
+R6
+R12
+R7
+n@s@c_up@t@r@a@n@s@i@t@i@o@n@c@o@u@n@t@e@r
+vshift_reg_start_done
+R1
+!i10b 1
+!s100 P[k=OFn:ZJUAdXXFS>kmX1
+IQ9PiOK5`?a;Rm9G>f=7[Y0
+R2
+R0
+R17
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/shift_reg_start_done.v
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/shift_reg_start_done.v
+L0 34
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/shift_reg_start_done.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/rtl/shift_reg_start_done.v|
+!i113 1
+R6
+R12
+R7
+vTB_SYSTEM
+R1
+!i10b 1
+!s100 eI2eI__<73XgGMjH;O=JE1
+IAiU0YSe8W0NkLAb<=d1NG3
+R2
+R0
+w1668878023
+8C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/simulation/modelsim/TB_SYSTEM.vt
+FC:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/simulation/modelsim/TB_SYSTEM.vt
+R10
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/simulation/modelsim/TB_SYSTEM.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/simulation/modelsim|C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/simulation/modelsim/TB_SYSTEM.vt|
+!i113 1
+R6
+!s92 -vlog01compat -work work {+incdir+C:/Users/FELIX/Desktop/Universidad/Segundo semestre/Sistemas Electronicos Digitales/Proyecto 1/Final con Monedas/Final con Monedas/simulation/modelsim}
+R7
+n@t@b_@s@y@s@t@e@m

@@ -1,0 +1,40 @@
+//##################PARA PERDER##########################
+//####################################################################*/
+//=======================================================
+//  MODULE Definition
+//=======================================================
+module CC_COINCOMPARATOR #(parameter MATRIXCOMPARATOR_DATAWIDTH=8)(
+//////////// OUTPUTS //////////
+	 CC_COINCOMPARATOR_coin_OutLow,
+//////////// INPUTS //////////
+    CC_COINCOMPARATOR_registro2_InBUS,
+    CC_COINCOMPARATOR_registro1_InBUS,
+    CC_COINCOMPARATOR_registro0_InBUS
+);
+//=======================================================
+//  PARAMETER declarations
+//=======================================================
+
+//=======================================================
+//  PORT declarations
+//=======================================================
+output	reg CC_COINCOMPARATOR_coin_OutLow;
+input 	[MATRIXCOMPARATOR_DATAWIDTH-1:0] CC_COINCOMPARATOR_registro3_InBUS;
+input 	[MATRIXCOMPARATOR_DATAWIDTH-1:0] CC_COINCOMPARATOR_registro2_InBUS;
+input 	[MATRIXCOMPARATOR_DATAWIDTH-1:0] CC_COINCOMPARATOR_registro1_InBUS;
+input 	[MATRIXCOMPARATOR_DATAWIDTH-1:0] CC_COINCOMPARATOR_registro0_InBUS;
+//=======================================================
+//  REG/WIRE declarations
+//=======================================================
+//=======================================================
+//  Structural coding
+//=======================================================
+always @(*)
+begin
+	if((CC_COINCOMPARATOR_registro2_InBUS == 8'b00000000)&(CC_COINCOMPARATOR_registro1_InBUS == 8'b00000000)&(CC_COINCOMPARATOR_registro0_InBUS == 8'b00000000))
+		CC_COINCOMPARATOR_coin_OutLow = 1'b1;
+	else 
+		CC_COINCOMPARATOR_coin_OutLow = 1'b0;
+end
+
+endmodule
